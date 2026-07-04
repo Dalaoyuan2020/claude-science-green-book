@@ -1,0 +1,150 @@
+paragraph: 给我一份关于主题的研究综述
+paragraph: 这是一个信息密集的综述任务。在合同之前，我先按你们的谱系基准和概率规范（对照矩阵、可审计、每个数字标出处）把范围和交付物固定下来，请大家过目。
+paragraph: 我首先说明我的理解的几点，根据您在批准计划时的校正：
+bulleted_list_item: 主题范围双重转换
+bulleted_list_item: 落地合同全部全文
+bulleted_list_item: 概率偏可审计
+paragraph: 以下是我计划执行的步骤：
+paragraph: 制定缺陷转化调查计划8个步骤
+paragraph: 已批准。我先实现第1步：以18篇种子文献为基准建立文献库，并检索补齐2024-2025的最新工作。先看看有哪些文献检索连接器计划和可用的技能。
+paragraph: 运行了 3 次搜索3个步骤
+paragraph: 寻找文献检索技能
+paragraph: 枚举连接器技能文档
+paragraph: 寻找人物造型技巧
+paragraph: 有mcp-literature(OpenAlex + arXiv)和literature-review技能。先加载检索技能和连接器方法文档，然后建立文献库。
+paragraph: 已加载 2 项技能2 步
+paragraph: 加载文献综述技能已加载
+paragraph: 加载文献连接器方法已加载
+paragraph: 连接器已就绪(OpenAlex + arXiv)。现在执行第1步:先把18篇种子文献解析成真实通道(获取DOI、年份、引用数)，再检索补齐2024–2025的最新工作。我在repl批量检索并落盘到交接。
+paragraph: 通过 arXiv 解析种子论文14 行输出
+paragraph: 部分种子已解析，少数需修改查询(DRAEM/DFMGAN/DualAnoDiff/GLASS/MIRAGE/GroundingAnomaly)。我做第二批精修+广域检索补齐2024-2026最新工作。
+paragraph: 运行了 2 条命令2 步
+paragraph: 完善未解决的种子论文22 行输出
+paragraph: 在 arXiv 上进行广泛的主题查询7 行输出
+paragraph: 种子已全部解析，并发现几个2026年新工作（One-to-More、MIRAGE、Real-IAD Variety、Anomaly-Preference）。我大概看看广域搜索结果，挑出真正相关的新边境。
+paragraph: 筛选出近期相关作品的广泛搜索结果148 行输出
+paragraph: 广域检索里，defect_synthesis//controllable_defect几条anomaly_removal被材料学“晶体缺陷”论文污染了，但anomaly_generation、、few_shot_defect_diffusion几条sem_defect提出了真正相关的新工作。我把最终语料锁定为18篇+精选新工作，批量牵引摘要与元数据（含OpenAlex引用数/会议确认）。
+paragraph: 获取语料库摘要和元数据27 行输出
+paragraph: 25篇语料（含摘要）已就位。arXiv未带journal_ref，我用OpenAlex按标题补齐核心方法的会议与引用数字（会议信息部分已在背景项目中给出，交叉验证）。
+paragraph: 运行了 2 条命令2 步
+paragraph: 通过 OpenAlex 丰富核心方法
+paragraph: 调试 OpenAlex 响应1 行输出
+paragraph: OpenAlex 一个免费的 API 密钥。我尝试需要通过甜点请求获取（会向你弹一次授权）；如果没有，我就跳过 OpenAlex 的引用数增强，改用 arXiv 元数据 + 项目背景中已给出的会议信息（这些已足以支撑综述，引用数锦上添花）。
+paragraph: 正在请求 OpenAlex 凭证
+paragraph: 波斯请求正在等你授权（弹窗已显示）。我不在这里引用阻塞——引用数只是补充信息，arXiv元数据+项目背景已给出的会议证明支持综述。我先用Python内核推进后续步骤（增强若获取关键再回填）。
+paragraph: 先把语料整理成references.csv，并完成第1步的谱系归属。
+paragraph: 运行命令，设置环境2 个步骤 · 1 次失败
+paragraph: 建筑参考表代码执行需要 Conda 环境。请使用 manage_en…
+paragraph: 列出可用环境
+paragraph: python环境有 pandas 和 matplotlib。用它。
+paragraph: 建筑参考表代码执行需要 Conda 环境。请使用 manage_en…
+paragraph: 需要显着的传动environment参数。
+paragraph: 建筑参考表27 行输出
+paragraph: 第1步完成:25篇语料,头部加瑕(20)、去瑕(1)、评估(2)、数据集(1)、检测(1)。去瑕方向仅FAIR一篇,已量化印证“潜在空位”。现在处理欠缺请求的结果——先查一下那个后台单元格是否返回了键。
+paragraph: 拿到OpenAlex密钥了。现在补齐核心方法的引用数与会议确认。
+paragraph: 利用引文丰富核心方法11 行输出
+paragraph: OpenAlex 引用数已获取，但注意这些匹配到的多是 arXiv 记录版本（如 DRAEM 仅 38，实际 ICCV 版本远高），所以我将引用数标注为“OpenAlex 版本相关下界值”，避免错误。mapping 进references.csv，标记第 1 步，进入谱系时间线图。
+paragraph: 将引文合并到参考文献中26 行输出
+paragraph: 第1步完成。现在进入第2步：分类法与谱系时间线图。先加载人物风格技能。
+paragraph: 加载图形风格技能已加载
+paragraph: 现在邻近谱系时间线图。设计：横轴年份(2021→2026)、纵轴方法族、节点为代表方法、连线示继承/增量关系、颜色区分方向(加瑕/去瑕/评估/数据集)。
+paragraph: 计算时间线的节点位置28 行输出
+paragraph: 需要 CJK 字体渲染中文标签。先检查可用字体，否则使用中文标签。
+paragraph: 检查CJK字体13 行输出
+paragraph: PingFang SC 可用(macOS 系统字体)。注册用于中文渲染。
+paragraph: 注册 PingFang CJK 字体注册地：香港平芳
+paragraph: 现在当前时间线图。定义继承关系边(基于机制谱系)，画节点、标签、方向图例。
+paragraph: 绘制世系时间线图1 个数字 · 已保存
+paragraph: lineage_timeline.png
+[IMAGE #1]
+paragraph: 图基本抢，但有几处标签重叠：DRAEM /NSA 挤压在一起，AnomalySD/DualAnoDiff 重叠("DualAnoDiff"和"AnomalySD"重叠字)。我修改标签重叠，让重叠节点错开。
+paragraph: 优化时间线标签位置1图·标签重叠：[('首次公开年份(arXiv)','2024')]计数：1
+paragraph: lineage_timeline.png
+[IMAGE #2]
+paragraph: 时间线图明显了，标签无重叠(唯一“重叠”是坐标轴与差距，属误报)。图清晰呈现了核心叙述：加瑕疵方向(蓝)沿手工合成→GAN→弱点→可控/逻辑/免训练/基础模型密集，而去瑕疵方向(红,FAIR)孤零零一个点——空位一目标题了然。保存图，并标记完成第2步。
+paragraph: 保存这张图，然后开始撰写综述主题（第3-7步）。这些是分析/写作步骤，我会用文献摘要作为逐一撰写。
+paragraph: 保存时间线和参考资料2件文物
+paragraph: 现在进入第3-7步的综述编写与对照矩阵。为了让每个方法的机制描述准确，我先抓取几篇机制关键新工作的摘要细读（种子文献我已掌握，但One-to-More、SARD、MAGIC、AnomalyHybrid、UniDefGen、AnomalyAgent、DeltaDeno等新工作需要核对）。摘要已在corpus.json里，我读核对。
+paragraph: 运行命令，读取文件2 步
+paragraph: 阅读关键摘要
+paragraph: 阅读完整摘要输出1 行
+paragraph: 摘要已细读完毕，已检测到充分。发现：AnomalySD实际上是“把异常区域修复成正常”的重要检测——这正是去瑕疵与重建式检测关联的例证，我会在去瑕疵章节点出。
+paragraph: 现在正在构建核心的可交付审计物——跨方法对照矩阵（第6步）。这是数字最密集的部分，我逐格标注出处。
+paragraph: 构建比较矩阵23 行输出
+paragraph: 色谱矩阵已建（21方法×10维度，数值标注出处）。现在渲染为一张无可挑剔的对照表图。用离散着色的表格式热图，突出关键维度（方向、少样本、掩码对、显存吸孔）。
+paragraph: 渲染比较矩阵图1 个图 · 已保存 comparison_matrix.png
+paragraph: comparison_matrix.png
+[IMAGE #3]
+paragraph: 矩阵结构清晰，但✓号字形（显示成方形）。PingFang 清晰该字符。我改用文字标记（“有”/“是”），并具有重要性。
+paragraph: 固定矩阵中的字形标记1 个图形 · 已重新保存，预计不会出现字形警告
+paragraph: comparison_matrix.png
+[IMAGE #4]
+paragraph: 矩阵图现在彻底完成了。第6步完成。保存矩阵图与CSV，标记文档。现在剩下的都是写作步骤(第3、4、5、7、8步)，我一次性完成了综述文档写作，把加瑕疵深度综述、去瑕疵空位、数据评估集、空位分析全部写入。
+paragraph: 先保存对照矩阵。
+paragraph: 保存比较矩阵2件文物
+paragraph: 现在整理数据集与评估指标表（第5步），然后撰写综述正文。先补充数据集元数据——MVTec AD、VisA、RealIAD、MPDD等的规模需要审核，我从RealIAD摘要和已知信息构建，并标注出处。
+paragraph: 先补抓RealIAD和MVTec的关键数字。
+paragraph: 验证数据集元数据10 行输出
+paragraph: 摘要因许可证未返回，但确认了 MVTec AD (2019, 1817 引) 和 Real-IAD (2024) 的存在。数据集规模数字我用领域公认值并明确标注为“论文/公开值”，不虚构。VisA 检索串命中了错误，我改用已知信息。现在构建数据集表。
+paragraph: 构建数据集和指标表17 行输出
+paragraph: 数据集与指标表已就位。现在撰写综述正文文档，把第3、4、5、7步的分析内容全部写入。我用文献摘要作为指标，内嵌DOI/arXiv链接，并对照谱系定位每个方法。
+paragraph: 由于这是一个长文档，我直接写入 markdown 文件。
+paragraph: 现在撰写综述文档。我分层撰写，先写前半部分（引言、分类法、加瑕深度综述）。
+paragraph: 编辑文件· survey_defect_conversion.md
+paragraph: 前半部分已写入。现在写后半部分：去瑕疵方向、评估与数据集、对照矩阵解读、空位分析与研究机会、参考文献。
+paragraph: 编辑文件· survey_defect_conversion.md
+paragraph: 综述正文已完成。运行 style_pass 做一次文体检查，然后保存所有交付物。
+paragraph: 跑动风格传球草稿4 行输出
+paragraph: style_pass只标了一个问题：破折号过多（中文界面下——是正常连接号，但英文lint把它当em-dash计）。这是中文写作的合理方式，但确实偏高，我学习套件部分以提升便捷性。25篇文献链接正好。
+paragraph: 我做了一次图书馆的破折号精简版——把部分——替换为冒号或句号，保留需要真正强调的。
+paragraph: 降低长破折号密度已应用：8 | 剩余——：27 | 每千瓦约：1.2
+paragraph: 破折号密度已降到合理区间（中文技术写作中——是正常连接号，保留下一个任务需要强调处）。保存所有交付物并标记剩余步骤完成。
+paragraph: 课件 CSV 是 python 生成的，md 是 text 类型，分开保存。
+paragraph: 已保存的文物2 步
+paragraph: 保存调查文件1 件文物
+paragraph: 保存数据集和指标表2件文物
+paragraph: 全部交付物已完成保存。标记剩余步骤。
+paragraph: 综述完成。主要结论如下。
+heading_2: 领域全景与谱系判断
+paragraph: 工业缺陷大家转换的根本困局是数据不昂贵：正常图时序、缺陷极稀缺（单类约20张）。这驱动了两个互为镜像的方向，而它们的发展极不平衡。在与18篇种子文献等强度的检索下，我把料语补充到25篇（references.csv）：加瑕疵20篇、去瑕疵仅1篇（FAIR）、评估2、数据集1、检测1。 4%的比例本身就验证了项目背景中“去瑕疵是潜在空位”的判断力。
+paragraph: 谱系时间线(图1)把这一点画直至今白:加瑕方向沿"手工合成(DRAEM/NSA,2021)→ GAN少样本(DFMGAN,2023)→ 扩散主流(AnomalyDiffusion/RealNet/GLASS/DualAnoDiff,2024–25)→可控/逻辑/免训练/基础模型(2025–26)”密集分叉;去瑕疵方向是一个孤点。
+heading_2: 对本项目最有用的四条对照判断(图2/comparison_matrix.csv)
+numbered_list_item: 样本数≤20是全领域共识
+numbered_list_item: 强可控性稀缺
+numbered_list_item: 16GB显存是真实过滤器方法先进性与显存接口度呈负相关
+numbered_list_item: 下游验证是普遍声明却无统一裁判
+heading_2: 空位与选题优先级
+paragraph: 我把按文献稀疏度×项目资产契合度排了序：去瑕疵系统化(6.1)≈可微生成-检测闭环(6.3)>少样本×强可控×16GB三角交集(6.2)>半导体SEM生成(6.4)。前面两者的独特性定位：去瑕疵文献方向最稀疏，而加瑕疵侧面成熟的修复/区域约束/免训练技术几乎无人做“反向”；同时你们同时掌握有转换端与DINOv3检测端，是做可微生成-检测闭环最具结构性优势的位置。
+paragraph: 一个关键机制观察写进了综述：AnomalySD表面是检测框架，实“把缺陷修复还原成正常”的去瑕疵逆向疗法——每一个能缺陷的修复模型都可能是去瑕疵器，领域把正向达到极致、反向几乎空白，这就是空位的结构性来源。
+heading_2: 交付物
+bulleted_list_item: Survey_defect_conversion.md
+bulleted_list_item: Comparison_matrix.csv
+bulleted_list_item: references.csv
+bulleted_list_item: datasets_metrics.csv
+bulleted_list_item: 图1 谱系时间线、图2 谱系已内嵌正文
+paragraph: 两点使用提醒：显存“偏紧/可行”是基于骨干类型的提示符4080实测，选型须以实机跑通近似；OpenAlex引用数多匹配arXiv版本记录，应视为下界（如DRAEM的ICCV版本实际远在38）。
+paragraph: 下一步，我可以下一步就6.1或6.3展开一份带张量形状推导、按16GB显存设计的具体方案+实验计划表(少样本/生成质量/下游涨点三维度)，直接对接可发表工作的图纸。
+paragraph: 已生成 · 7
+paragraph: 调查缺陷版本.md
+paragraph: 血统_t时间线.png
+[IMAGE #5]
+paragraph: 比较_matrix.png
+[IMAGE #6]
+paragraph: 参考erences.csv
+paragraph: 比较_matrix.csv
+paragraph: +2
+paragraph: 审稿人· 2 条 发现
+paragraph: 两处都属实：四个引用把首作者姓张冠李戴了（arXiv ID正确但姓氏不在列表作者里），对照矩阵图有两格文字“弱”和0.6色阶不一致。我用corpus.json的真实作者修改引用，并修复矩阵的文字-色阶分支，重存两个神器。
+paragraph: 运行了 2 条命令2 步
+paragraph: 确认真正的第一作者4 行输出
+paragraph: 修正引用中的姓氏替换件：5
+paragraph: 5处替换(DeltaDeno 两处已含)。现在修复矩阵图的short()分支，让“迭代优化/多刻度”显示为“中”以匹配其0.6色阶。
+paragraph: 修复矩阵标签颜色不匹配图 1 · AnomalyAgent ctrl: 中 | 3D-PNAS ctrl: 中
+paragraph: comparison_matrix.png
+[IMAGE #7]
+paragraph: 两格现在都显示“中”，使用颜色阶次一致。作为重存两个神器（新版本）。
+paragraph: 课件 md 与图分开保存,md 用 text、图用 python。
+paragraph: 已保存的文物2 步
+paragraph: 重新保存已更正的调查1 件文物
+paragraph: 重新保存修正后的矩阵图1 件文物
+paragraph: 作者两处已修改:引用首首改回corpus.json的真实姓氏(DefectFill→Song、MAGIC→Choi、DeltaDeno→Xu、DefectDiffu→Shi),对照矩阵图两格文字由"弱"改为"中"以匹配其色阶。survey_defect_conversion.md与comparison_matrix.png已均更新为新版本。
