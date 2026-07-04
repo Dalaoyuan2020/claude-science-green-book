@@ -12,14 +12,14 @@
 | 流派 | 篇数 | 思路一句话 | 代表作（引用数） |
 |---|---|---|---|
 | 重建/生成类 | 9 | 让模型学会"画"正常品，画不像的地方就是缺陷 | MFGAN(53)、AMI-Net(34)、MiniMaxAD(6) |
-| 记忆库/特征嵌入 | 7 | 把正常品特征存成"字典"，新样本查字典比对 | PNI(88)、FAPM(42)、FR-PatchCore(18) |
+| 记忆库/特征嵌入 | 6* | 把正常品特征存成"字典"，新样本查字典比对 | PNI(88)、FAPM(42)、FR-PatchCore(18) |
 | 蒸馏/师生网络 | 4* | 老师见多识广，学生只学正常品；师生答案不一致=异常 | **EfficientAD(268，全场最高引)**、LPFSTNet |
 | 多模态/3D | 4+ | RGB 之外加深度/点云/红外，看单目看不出的缺陷 | EasyNet(52)、2M3DF(16) |
 | 大模型/零样本 | 2 | 借 CLIP/SAM 的通用视觉知识，不训练直接检测 | IAD-CLIP(5)、SAM-guided(16) |
 | 归一化流 | 2 | 把正常特征"压"成标准分布，落在分布外=异常 | UniFlow(7) |
 | 时序/IoT 传感 | 8 | 同名不同界：检测的是设备信号曲线，不是图像 | TMANomaly(23) |
 
-*EfficientAD 标题看不出流派，经 API 摘要核实为师生网络（"we then use a student–teacher approach"）。
+*篇数已去掉预印本重复记录（PNI、EfficientAD 各有 arXiv 版+正式版两条）；EfficientAD 标题看不出流派，经 API 摘要核实为师生网络（"we then use a student–teacher approach"）后归入蒸馏。另有 13 篇为通用框架/主动学习/光照增强等暂不成派的散兵，未单列。
 
 ## 热点判读
 
