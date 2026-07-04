@@ -2,12 +2,24 @@
 # Steps 2+3: build the "schools map" and the 4-dimension stats
 # from the real OpenAlex response (step1_response.json).
 # Ran on 2026-07-04 with /usr/bin/python3. Zero third-party deps.
+# Rev 2 (2026-07-04, revision round 1): dedup preprint/published duplicates
+# BEFORE all stats, so every number in the chapter uses the 48-paper basis.
 import json, re, collections
 
 with open("step1_response.json") as f:
     data = json.load(f)
-works = data["results"]
-print(f"works loaded: {len(works)}\n")
+works_raw = data["results"]
+
+# Dedup: arXiv preprint + published version show up as two records
+# (PNI and EfficientAD each have two). Normalize title, keep higher-cited.
+seen = {}
+for w in sorted(works_raw, key=lambda x: -x["cited_by_count"]):
+    key = re.sub(r"[^a-z0-9]", "", (w["title"] or "").lower())
+    if key not in seen:
+        seen[key] = w
+works = list(seen.values())
+print(f"records loaded: {len(works_raw)}, after dedup: {len(works)} "
+      f"(removed {len(works_raw) - len(works)} preprint duplicates)\n")
 
 # ---------- Step 2: bucket into schools by title keywords ----------
 # Rules written AFTER eyeballing the real titles (not from prior knowledge).

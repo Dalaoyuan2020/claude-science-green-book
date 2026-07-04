@@ -1,8 +1,8 @@
-works loaded: 50
+records loaded: 50, after dedup: 48 (removed 2 preprint duplicates)
 
 === Step 2: 流派分桶 (title-rule based, first-match-wins) ===
 
-[其他(检测头/框架/综述等)] 15 篇
+[其他(检测头/框架/综述等)] 14 篇
   - EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
   - A Semisupervised Approach for Industrial Anomaly Detection via Self-Adaptive Clustering
   - Template-based Feature Aggregation Network for industrial anomaly detection
@@ -12,7 +12,6 @@ works loaded: 50
   - Rethinking Discrepancy Analysis: Anomaly Detection via Meta-Learning Powered Dual-Source Representation Differentiation
   - Image-based anomaly detection in low-light industrial environments with feature enhancement
   - Unsupervised industrial anomaly detection using paired well-lit and low-light images
-  - EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
   - An Overview of Methods of Industrial Anomaly Detection
   - CDD-YOLOv8: A Small Defect Detection and Classification Algorithm for Cigarette Packages
   - Industrial Image Anomaly Detection via Self-Supervised Learning with Feature Enhancement Assistance
@@ -40,14 +39,13 @@ works loaded: 50
   - Real-Time Anomaly Detection for Industrial Robotic Arms Using Edge Computing
   - Explainable Unsupervised Multi-Sensor Industrial Anomaly Detection and Categorization
 
-[记忆库/特征嵌入] 7 篇
+[记忆库/特征嵌入] 6 篇
   - PNI: Industrial Anomaly Detection using Position and Neighborhood Information
   - FAPM: Fast Adaptive Patch Memory for Real-Time Industrial Anomaly Detection
   - FR-PatchCore: An Industrial Anomaly Detection Method for Improving Generalization
   - SoftPatch+: Fully unsupervised anomaly classification and segmentation
   - DMMGNet: A discrimination mapping and memory bank mean guidance-based network for high-performance few-shot industrial anomaly detection
   - Divide and Conquer: High-Resolution Industrial Anomaly Detection via Memory Efficient Tiled Ensemble
-  - PNI : Industrial Anomaly Detection using Position and Neighborhood Information
 
 [多模态/3D] 4 篇
   - EasyNet: An Easy Network for 3D Industrial Anomaly Detection
@@ -70,8 +68,8 @@ works loaded: 50
 
 === Step 3.1: 年份分布 ===
 2021: # 1
-2022: #### 4
-2023: ########### 11
+2022: ### 3
+2023: ########## 10
 2024: ##################### 21
 2025: ############# 13
 
@@ -83,27 +81,27 @@ works loaded: 50
 2  IEEE Transactions on Automation Science and Engineering
 2  Applied Sciences
 2  IEEE Transactions on Instrumentation and Measurement
-2  arXiv (Cornell University)
 1  Knowledge-Based Systems
 1  Applied Intelligence
+1  Engineering Applications of Artificial Intelligence
 
 === Step 3.3: 高频关键词 (OpenAlex keywords 字段) ===
-49  Computer science
-48  Anomaly detection
-47  Artificial intelligence
-33  Anomaly (physics)
-32  Pattern recognition (psychology)
-21  Data mining
-15  Physics
-15  Feature (linguistics)
-11  Mathematics
+47  Computer science
+46  Anomaly detection
+45  Artificial intelligence
+31  Anomaly (physics)
+30  Pattern recognition (psychology)
+20  Data mining
+14  Physics
+13  Feature (linguistics)
 11  Machine learning
+10  Mathematics
 8  Computer vision
-8  Deep learning
+7  Deep learning
 6  Feature extraction
-6  Image (mathematics)
-6  Artificial neural network
+5  Image (mathematics)
+5  Artificial neural network
 
 === Step 3.4: 内容构成 (type + 标题启发式) ===
-OpenAlex type: {'article': 45, 'review': 1, 'preprint': 3, 'book-chapter': 1}
-标题启发式: {'方法类': 43, '综述类': 2, '应用类': 5}
+OpenAlex type: {'article': 45, 'review': 1, 'preprint': 1, 'book-chapter': 1}
+标题启发式: {'方法类': 41, '综述类': 2, '应用类': 5}
