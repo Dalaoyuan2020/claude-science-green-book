@@ -1,0 +1,405 @@
+{
+ "count": 269,
+ "rows": [
+  {
+   "year": 2024,
+   "cites": 268,
+   "title": "EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/wacv57701.2024.00020"
+  },
+  {
+   "year": 2023,
+   "cites": 88,
+   "title": "PNI: Industrial Anomaly Detection using Position and Neighborhood Information",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/iccv51070.2023.00586"
+  },
+  {
+   "year": 2024,
+   "cites": 53,
+   "title": "MFGAN: Multimodal Fusion for Industrial Anomaly Detection Using Attention-Based Autoencoder and Generative Adversarial Network",
+   "venue": "Sensors",
+   "type": "article",
+   "doi": "https://doi.org/10.3390/s24020637"
+  },
+  {
+   "year": 2023,
+   "cites": 52,
+   "title": "EasyNet: An Easy Network for 3D Industrial Anomaly Detection",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1145/3581783.3611876"
+  },
+  {
+   "year": 2023,
+   "cites": 42,
+   "title": "FAPM: Fast Adaptive Patch Memory for Real-Time Industrial Anomaly Detection",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/icassp49357.2023.10096400"
+  },
+  {
+   "year": 2024,
+   "cites": 34,
+   "title": "Multi-scale feature reconstruction network for industrial anomaly detection",
+   "venue": "Knowledge-Based Systems",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.knosys.2024.112650"
+  },
+  {
+   "year": 2024,
+   "cites": 34,
+   "title": "AMI-Net: Adaptive Mask Inpainting Network for Industrial Anomaly Detection and Localization",
+   "venue": "IEEE Transactions on Automation Science and Engineering",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tase.2024.3368142"
+  },
+  {
+   "year": 2024,
+   "cites": 30,
+   "title": "Unsupervised Deep Anomaly Detection for Industrial Multivariate Time Series Data",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "doi": "https://doi.org/10.3390/app14020774"
+  },
+  {
+   "year": 2023,
+   "cites": 23,
+   "title": "TMANomaly: Time-Series Mutual Adversarial Networks for Industrial Anomaly Detection",
+   "venue": "IEEE Transactions on Industrial Informatics",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tii.2023.3288226"
+  },
+  {
+   "year": 2023,
+   "cites": 23,
+   "title": "A Semisupervised Approach for Industrial Anomaly Detection via Self-Adaptive Clustering",
+   "venue": "IEEE Transactions on Industrial Informatics",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tii.2023.3280246"
+  },
+  {
+   "year": 2024,
+   "cites": 20,
+   "title": "3D Industrial anomaly detection via dual reconstruction network",
+   "venue": "Applied Intelligence",
+   "type": "article",
+   "doi": "https://doi.org/10.1007/s10489-024-05700-x"
+  },
+  {
+   "year": 2023,
+   "cites": 19,
+   "title": "Asymmetric Teacher\u2013Student Feature Pyramid Matching for Industrial Anomaly Detection",
+   "venue": "IEEE Transactions on Instrumentation and Measurement",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tim.2023.3338681"
+  },
+  {
+   "year": 2024,
+   "cites": 19,
+   "title": "Template-based Feature Aggregation Network for industrial anomaly detection",
+   "venue": "Engineering Applications of Artificial Intelligence",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.engappai.2023.107810"
+  },
+  {
+   "year": 2025,
+   "cites": 18,
+   "title": "A systematic survey: role of deep learning-based image anomaly detection in industrial inspection contexts",
+   "venue": "Frontiers in Robotics and AI",
+   "type": "review",
+   "doi": "https://doi.org/10.3389/frobt.2025.1554196"
+  },
+  {
+   "year": 2024,
+   "cites": 18,
+   "title": "FR-PatchCore: An Industrial Anomaly Detection Method for Improving Generalization",
+   "venue": "Sensors",
+   "type": "article",
+   "doi": "https://doi.org/10.3390/s24051368"
+  },
+  {
+   "year": 2024,
+   "cites": 16,
+   "title": "A SAM-guided Two-stream Lightweight Model for Anomaly Detection",
+   "venue": "ACM Transactions on Multimedia Computing Communications and Applications",
+   "type": "article",
+   "doi": "https://doi.org/10.1145/3706574"
+  },
+  {
+   "year": 2024,
+   "cites": 16,
+   "title": "SoftPatch+: Fully unsupervised anomaly classification and segmentation",
+   "venue": "Pattern Recognition",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.patcog.2024.111295"
+  },
+  {
+   "year": 2025,
+   "cites": 16,
+   "title": "2M3DF: Advancing 3D Industrial Defect Detection With Multi-Perspective Multimodal Fusion Network",
+   "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tcsvt.2025.3536475"
+  },
+  {
+   "year": 2023,
+   "cites": 15,
+   "title": "Graph-Based Active Learning With Uncertainty and Representativeness for Industrial Anomaly Detection",
+   "venue": "IEEE Transactions on Instrumentation and Measurement",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tim.2023.3279422"
+  },
+  {
+   "year": 2023,
+   "cites": 14,
+   "title": "Anomaly Detection Using an Ensemble of Multi-Point LSTMs",
+   "venue": "Entropy",
+   "type": "article",
+   "doi": "https://doi.org/10.3390/e25111480"
+  },
+  {
+   "year": 2021,
+   "cites": 14,
+   "title": "Real-Time Anomaly Detection in Packaged Food X-Ray Images Using Supervised Learning",
+   "venue": "Computers, materials & continua/Computers, materials & continua (Print)",
+   "type": "article",
+   "doi": "https://doi.org/10.32604/cmc.2021.014642"
+  },
+  {
+   "year": 2025,
+   "cites": 13,
+   "title": "Privacy-Preserving Lightweight Time-Series Anomaly Detection for Resource-Limited Industrial IoT Edge Devices",
+   "venue": "IEEE Transactions on Industrial Informatics",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tii.2025.3538127"
+  },
+  {
+   "year": 2025,
+   "cites": 12,
+   "title": "CPIR: Multimodal Industrial Anomaly Detection via Latent Bridged Cross-modal Prediction and Intra-modal Reconstruction",
+   "venue": "Advanced Engineering Informatics",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.aei.2025.103240"
+  },
+  {
+   "year": 2024,
+   "cites": 12,
+   "title": "DMMGNet: A discrimination mapping and memory bank mean guidance-based network for high-performance few-shot industrial anomaly detection",
+   "venue": "Neurocomputing",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.neucom.2024.128622"
+  },
+  {
+   "year": 2024,
+   "cites": 11,
+   "title": "Rethinking Discrepancy Analysis: Anomaly Detection via Meta-Learning Powered Dual-Source Representation Differentiation",
+   "venue": "IEEE Transactions on Automation Science and Engineering",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/tase.2024.3486688"
+  },
+  {
+   "year": 2024,
+   "cites": 10,
+   "title": "Divide and Conquer: High-Resolution Industrial Anomaly Detection via Memory Efficient Tiled Ensemble",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/cvprw63382.2024.00391"
+  },
+  {
+   "year": 2025,
+   "cites": 10,
+   "title": "Fusion-restoration model for industrial multimodal anomaly detection",
+   "venue": "Neurocomputing",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.neucom.2025.130073"
+  },
+  {
+   "year": 2025,
+   "cites": 9,
+   "title": "Image-based anomaly detection in low-light industrial environments with feature enhancement",
+   "venue": "Results in Engineering",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.rineng.2025.104309"
+  },
+  {
+   "year": 2024,
+   "cites": 9,
+   "title": "Anomaly detection framework for IoT-enabled appliances using machine learning",
+   "venue": "Cluster Computing",
+   "type": "article",
+   "doi": "https://doi.org/10.1007/s10586-024-04461-z"
+  },
+  {
+   "year": 2022,
+   "cites": 8,
+   "title": "PNI : Industrial Anomaly Detection using Position and Neighborhood Information",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2211.12634"
+  },
+  {
+   "year": 2025,
+   "cites": 8,
+   "title": "Unsupervised industrial anomaly detection using paired well-lit and low-light images",
+   "venue": "Journal of Computational Design and Engineering",
+   "type": "article",
+   "doi": "https://doi.org/10.1093/jcde/qwaf043"
+  },
+  {
+   "year": 2025,
+   "cites": 8,
+   "title": "Multi-modal digital twins for industrial anomaly detection: Framework, method, and application",
+   "venue": "Robotics and Computer-Integrated Manufacturing",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.rcim.2025.103068"
+  },
+  {
+   "year": 2023,
+   "cites": 8,
+   "title": "EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies",
+   "venue": "arXiv (Cornell University)",
+   "type": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2303.14535"
+  },
+  {
+   "year": 2024,
+   "cites": 8,
+   "title": "An Overview of Methods of Industrial Anomaly Detection",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/rcae62637.2024.10834253"
+  },
+  {
+   "year": 2024,
+   "cites": 7,
+   "title": "Self-supervised dual-layer 2D normalizing flow method for industrial anomaly detection",
+   "venue": "Applied Soft Computing",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.asoc.2024.111928"
+  },
+  {
+   "year": 2022,
+   "cites": 7,
+   "title": "Multivariate Time Series Anomaly Detection with Few Positive Samples",
+   "venue": "2022 International Joint Conference on Neural Networks (IJCNN)",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/ijcnn55064.2022.9892091"
+  },
+  {
+   "year": 2024,
+   "cites": 7,
+   "title": "UniFlow: Unified Normalizing Flow for Unsupervised Multi-Class Anomaly Detection",
+   "venue": "Information",
+   "type": "article",
+   "doi": "https://doi.org/10.3390/info15120791"
+  },
+  {
+   "year": 2023,
+   "cites": 7,
+   "title": "CDD-YOLOv8: A Small Defect Detection and Classification Algorithm for Cigarette Packages",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/cyber59472.2023.10256576"
+  },
+  {
+   "year": 2025,
+   "cites": 6,
+   "title": "Accurate industrial anomaly detection with efficient multimodal fusion",
+   "venue": "Array",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.array.2025.100512"
+  },
+  {
+   "year": 2024,
+   "cites": 6,
+   "title": "GLAE: Global-local Feature Autoencoder for Image Logical\u00a0Anomaly Detection",
+   "venue": "Research Square",
+   "type": "preprint",
+   "doi": "https://doi.org/10.21203/rs.3.rs-3842133/v1"
+  },
+  {
+   "year": 2025,
+   "cites": 6,
+   "title": "MiniMaxAD: A lightweight autoencoder for feature-rich anomaly detection",
+   "venue": "Computers in Industry",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.compind.2025.104315"
+  },
+  {
+   "year": 2025,
+   "cites": 6,
+   "title": "Real-Time Anomaly Detection for Industrial Robotic Arms Using Edge Computing",
+   "venue": "IEEE Internet of Things Journal",
+   "type": "article",
+   "doi": "https://doi.org/10.1109/jiot.2025.3569780"
+  },
+  {
+   "year": 2024,
+   "cites": 6,
+   "title": "Industrial Image Anomaly Detection via Self-Supervised Learning with Feature Enhancement Assistance",
+   "venue": "Applied Sciences",
+   "type": "article",
+   "doi": "https://doi.org/10.3390/app14167301"
+  },
+  {
+   "year": 2022,
+   "cites": 6,
+   "title": "Edge AI System Using a Thermal Camera for Industrial Anomaly Detection",
+   "venue": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+   "type": "book-chapter",
+   "doi": "https://doi.org/10.1007/978-3-031-06371-8_12"
+  },
+  {
+   "year": 2023,
+   "cites": 6,
+   "title": "Industrial Anomaly Detection via Teacher Student Network",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/icamechs59878.2023.10272951"
+  },
+  {
+   "year": 2025,
+   "cites": 6,
+   "title": "LPFSTNet: A lightweight and parameter-free head attention-based student\u2013teacher network for fast 3D industrial anomaly detection",
+   "venue": "Neurocomputing",
+   "type": "article",
+   "doi": "https://doi.org/10.1016/j.neucom.2025.129408"
+  },
+  {
+   "year": 2024,
+   "cites": 6,
+   "title": "Dual-branch reconstruction network for industrial anomaly detection with RGB-D data",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1117/12.3033181"
+  },
+  {
+   "year": 2025,
+   "cites": 5,
+   "title": "Efficient compression of encoder-decoder models for semantic segmentation using the separation index",
+   "venue": "Scientific Reports",
+   "type": "article",
+   "doi": "https://doi.org/10.1038/s41598-025-10348-9"
+  },
+  {
+   "year": 2022,
+   "cites": 5,
+   "title": "Explainable Unsupervised Multi-Sensor Industrial Anomaly Detection and Categorization",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/icmla55696.2022.00231"
+  },
+  {
+   "year": 2024,
+   "cites": 5,
+   "title": "IAD-CLIP: Vision-Language Models for Zero-Shot Industrial Anomaly Detection",
+   "venue": null,
+   "type": "article",
+   "doi": "https://doi.org/10.1109/icamechs63130.2024.10818831"
+  }
+ ]
+}
