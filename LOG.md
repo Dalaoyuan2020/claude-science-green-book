@@ -18,6 +18,12 @@
 - `articles/2026-07-04-day01.md`
 - 进度面板 Artifact（链接见 RESUME.md）
 
-**明天候选**
-- Day 2 文章：手把手装 Claude Code（Windows 实录）
-- §03 样章按拷打清单修订
+**Day 1 追加（晚间）**
+- §03 样章走完全产线：写手实测→成稿→独立拷打（P0=0）→一轮修订 15/15→PDF
+- study-blog 开新系列「Claude Science 绿皮书」，第 1 篇《01 · Claude Science 是什么》已上线（精华版+封面），结尾埋两问题钩子
+- MacBook 打通（IP 漂移改用主机名连），dev 预览服务起在 http://192.168.31.21:5173/study-blog/
+
+**明天（Day 2）已定**
+- 主题：怎么在 Windows 上用上 Claude Science（接今天结尾的两个问题之一）
+- 公众号 Day 2 长文 + study-blog 第 2 篇精华版同步
+- §03 样章 PDF 待吕博验收
