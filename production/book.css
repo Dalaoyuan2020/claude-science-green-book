@@ -1,0 +1,96 @@
+/* 绿皮书排版样式 v0.1 — pandoc HTML → Chrome 无头打印 */
+@page { size: A4; margin: 22mm 20mm 24mm 20mm; }
+
+:root {
+  --green: #1E7A4C;
+  --green-deep: #215E41;
+  --ink: #1B2620;
+  --ink2: #47584F;
+  --muted: #75857B;
+  --line: #D9E3DA;
+  --code-bg: #F2F7F3;
+  --gold: #8F6C0C;
+  --gold-bg: #FBF4DC;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 10.8pt; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Songti SC", serif;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+h1, h2, h3 { font-family: "Songti SC", "STSong", serif; line-height: 1.35; text-wrap: balance; text-align: left; }
+
+/* 章标题页头 */
+h1 {
+  font-size: 26pt;
+  color: var(--green-deep);
+  border-bottom: 3px solid var(--green);
+  padding: 18pt 0 10pt;
+  margin: 0 0 18pt;
+}
+h1 .zh-sub, h1 small { display: block; font-size: 11pt; color: var(--muted); font-weight: 400; }
+
+h2 {
+  font-size: 15.5pt;
+  color: var(--green-deep);
+  margin: 22pt 0 8pt;
+  padding-left: 9pt;
+  border-left: 4px solid var(--green);
+  break-after: avoid;
+}
+h3 { font-size: 12.5pt; margin: 16pt 0 6pt; break-after: avoid; }
+
+p { margin: 0 0 9pt; }
+strong { color: var(--green-deep); }
+blockquote {
+  margin: 12pt 0; padding: 8pt 14pt;
+  border-left: 3px solid var(--gold);
+  background: var(--gold-bg);
+  color: var(--ink2);
+  font-style: normal;
+}
+blockquote p { margin: 0; }
+
+code {
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 9pt;
+  background: var(--code-bg);
+  padding: 1pt 4pt;
+  border-radius: 3px;
+}
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: 4px;
+  padding: 10pt 12pt;
+  overflow-x: auto;
+  break-inside: avoid;
+  line-height: 1.6;
+}
+pre code { background: none; padding: 0; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12pt 0;
+  font-size: 9.5pt;
+  break-inside: avoid;
+}
+th, td { border: none; padding: 5pt 9pt; text-align: left; }
+thead th { border-top: 1.5pt solid var(--ink); border-bottom: 0.8pt solid var(--ink); font-weight: 700; }
+tbody tr:last-child td { border-bottom: 1.5pt solid var(--ink); }
+tbody tr:nth-child(even) { background: #F6FAF7; }
+
+ul, ol { padding-left: 1.6em; margin: 0 0 9pt; }
+li { margin-bottom: 3pt; }
+
+hr { border: none; border-top: 1px solid var(--line); margin: 16pt 0; }
+img { max-width: 100%; }
+
+/* 金句收尾块：以 > **一句带走** 开头的引用自动套 gold 样式（同 blockquote） */

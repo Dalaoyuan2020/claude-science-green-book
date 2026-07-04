@@ -1,0 +1,50 @@
+2024	268	article	unknown	EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
+2023	88	article	unknown	PNI: Industrial Anomaly Detection using Position and Neighborhood Information
+2024	53	article	Sensors	MFGAN: Multimodal Fusion for Industrial Anomaly Detection Using Attention-Based Autoencoder and Generative Adversarial Network
+2023	52	article	unknown	EasyNet: An Easy Network for 3D Industrial Anomaly Detection
+2023	42	article	unknown	FAPM: Fast Adaptive Patch Memory for Real-Time Industrial Anomaly Detection
+2024	34	article	Knowledge-Based Systems	Multi-scale feature reconstruction network for industrial anomaly detection
+2024	34	article	IEEE Transactions on Automation Science and Engineering	AMI-Net: Adaptive Mask Inpainting Network for Industrial Anomaly Detection and Localization
+2024	30	article	Applied Sciences	Unsupervised Deep Anomaly Detection for Industrial Multivariate Time Series Data
+2023	23	article	IEEE Transactions on Industrial Informatics	TMANomaly: Time-Series Mutual Adversarial Networks for Industrial Anomaly Detection
+2023	23	article	IEEE Transactions on Industrial Informatics	A Semisupervised Approach for Industrial Anomaly Detection via Self-Adaptive Clustering
+2024	20	article	Applied Intelligence	3D Industrial anomaly detection via dual reconstruction network
+2023	19	article	IEEE Transactions on Instrumentation and Measurement	Asymmetric Teacher–Student Feature Pyramid Matching for Industrial Anomaly Detection
+2024	19	article	Engineering Applications of Artificial Intelligence	Template-based Feature Aggregation Network for industrial anomaly detection
+2025	18	review	Frontiers in Robotics and AI	A systematic survey: role of deep learning-based image anomaly detection in industrial inspection contexts
+2024	18	article	Sensors	FR-PatchCore: An Industrial Anomaly Detection Method for Improving Generalization
+2024	16	article	ACM Transactions on Multimedia Computing Communications and Applications	A SAM-guided Two-stream Lightweight Model for Anomaly Detection
+2024	16	article	Pattern Recognition	SoftPatch+: Fully unsupervised anomaly classification and segmentation
+2025	16	article	IEEE Transactions on Circuits and Systems for Video Technology	2M3DF: Advancing 3D Industrial Defect Detection With Multi-Perspective Multimodal Fusion Network
+2023	15	article	IEEE Transactions on Instrumentation and Measurement	Graph-Based Active Learning With Uncertainty and Representativeness for Industrial Anomaly Detection
+2023	14	article	Entropy	Anomaly Detection Using an Ensemble of Multi-Point LSTMs
+2021	14	article	Computers, materials & continua/Computers, materials & continua (Print)	Real-Time Anomaly Detection in Packaged Food X-Ray Images Using Supervised Learning
+2025	13	article	IEEE Transactions on Industrial Informatics	Privacy-Preserving Lightweight Time-Series Anomaly Detection for Resource-Limited Industrial IoT Edge Devices
+2025	12	article	Advanced Engineering Informatics	CPIR: Multimodal Industrial Anomaly Detection via Latent Bridged Cross-modal Prediction and Intra-modal Reconstruction
+2024	12	article	Neurocomputing	DMMGNet: A discrimination mapping and memory bank mean guidance-based network for high-performance few-shot industrial anomaly detection
+2024	11	article	IEEE Transactions on Automation Science and Engineering	Rethinking Discrepancy Analysis: Anomaly Detection via Meta-Learning Powered Dual-Source Representation Differentiation
+2024	10	article	unknown	Divide and Conquer: High-Resolution Industrial Anomaly Detection via Memory Efficient Tiled Ensemble
+2025	10	article	Neurocomputing	Fusion-restoration model for industrial multimodal anomaly detection
+2025	9	article	Results in Engineering	Image-based anomaly detection in low-light industrial environments with feature enhancement
+2024	9	article	Cluster Computing	Anomaly detection framework for IoT-enabled appliances using machine learning
+2022	8	preprint	arXiv (Cornell University)	PNI : Industrial Anomaly Detection using Position and Neighborhood Information
+2025	8	article	Journal of Computational Design and Engineering	Unsupervised industrial anomaly detection using paired well-lit and low-light images
+2025	8	article	Robotics and Computer-Integrated Manufacturing	Multi-modal digital twins for industrial anomaly detection: Framework, method, and application
+2023	8	preprint	arXiv (Cornell University)	EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
+2024	8	article	unknown	An Overview of Methods of Industrial Anomaly Detection
+2024	7	article	Applied Soft Computing	Self-supervised dual-layer 2D normalizing flow method for industrial anomaly detection
+2022	7	article	2022 International Joint Conference on Neural Networks (IJCNN)	Multivariate Time Series Anomaly Detection with Few Positive Samples
+2024	7	article	Information	UniFlow: Unified Normalizing Flow for Unsupervised Multi-Class Anomaly Detection
+2023	7	article	unknown	CDD-YOLOv8: A Small Defect Detection and Classification Algorithm for Cigarette Packages
+2025	6	article	Array	Accurate industrial anomaly detection with efficient multimodal fusion
+2024	6	preprint	Research Square	GLAE: Global-local Feature Autoencoder for Image Logical Anomaly Detection
+2025	6	article	Computers in Industry	MiniMaxAD: A lightweight autoencoder for feature-rich anomaly detection
+2025	6	article	IEEE Internet of Things Journal	Real-Time Anomaly Detection for Industrial Robotic Arms Using Edge Computing
+2024	6	article	Applied Sciences	Industrial Image Anomaly Detection via Self-Supervised Learning with Feature Enhancement Assistance
+2022	6	book-chapter	Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering	Edge AI System Using a Thermal Camera for Industrial Anomaly Detection
+2023	6	article	unknown	Industrial Anomaly Detection via Teacher Student Network
+2025	6	article	Neurocomputing	LPFSTNet: A lightweight and parameter-free head attention-based student–teacher network for fast 3D industrial anomaly detection
+2024	6	article	unknown	Dual-branch reconstruction network for industrial anomaly detection with RGB-D data
+2025	5	article	Scientific Reports	Efficient compression of encoder-decoder models for semantic segmentation using the separation index
+2022	5	article	unknown	Explainable Unsupervised Multi-Sensor Industrial Anomaly Detection and Categorization
+2024	5	article	unknown	IAD-CLIP: Vision-Language Models for Zero-Shot Industrial Anomaly Detection
