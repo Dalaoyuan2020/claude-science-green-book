@@ -1,0 +1,109 @@
+works loaded: 50
+
+=== Step 2: 流派分桶 (title-rule based, first-match-wins) ===
+
+[其他(检测头/框架/综述等)] 15 篇
+  - EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
+  - A Semisupervised Approach for Industrial Anomaly Detection via Self-Adaptive Clustering
+  - Template-based Feature Aggregation Network for industrial anomaly detection
+  - A systematic survey: role of deep learning-based image anomaly detection in industrial inspection contexts
+  - Graph-Based Active Learning With Uncertainty and Representativeness for Industrial Anomaly Detection
+  - Real-Time Anomaly Detection in Packaged Food X-Ray Images Using Supervised Learning
+  - Rethinking Discrepancy Analysis: Anomaly Detection via Meta-Learning Powered Dual-Source Representation Differentiation
+  - Image-based anomaly detection in low-light industrial environments with feature enhancement
+  - Unsupervised industrial anomaly detection using paired well-lit and low-light images
+  - EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
+  - An Overview of Methods of Industrial Anomaly Detection
+  - CDD-YOLOv8: A Small Defect Detection and Classification Algorithm for Cigarette Packages
+  - Industrial Image Anomaly Detection via Self-Supervised Learning with Feature Enhancement Assistance
+  - Edge AI System Using a Thermal Camera for Industrial Anomaly Detection
+  - Efficient compression of encoder-decoder models for semantic segmentation using the separation index
+
+[重建/生成类] 9 篇
+  - MFGAN: Multimodal Fusion for Industrial Anomaly Detection Using Attention-Based Autoencoder and Generative Adversarial Network
+  - Multi-scale feature reconstruction network for industrial anomaly detection
+  - AMI-Net: Adaptive Mask Inpainting Network for Industrial Anomaly Detection and Localization
+  - 3D Industrial anomaly detection via dual reconstruction network
+  - CPIR: Multimodal Industrial Anomaly Detection via Latent Bridged Cross-modal Prediction and Intra-modal Reconstruction
+  - Fusion-restoration model for industrial multimodal anomaly detection
+  - GLAE: Global-local Feature Autoencoder for Image Logical Anomaly Detection
+  - MiniMaxAD: A lightweight autoencoder for feature-rich anomaly detection
+  - Dual-branch reconstruction network for industrial anomaly detection with RGB-D data
+
+[时序/IoT 传感] 8 篇
+  - Unsupervised Deep Anomaly Detection for Industrial Multivariate Time Series Data
+  - TMANomaly: Time-Series Mutual Adversarial Networks for Industrial Anomaly Detection
+  - Anomaly Detection Using an Ensemble of Multi-Point LSTMs
+  - Privacy-Preserving Lightweight Time-Series Anomaly Detection for Resource-Limited Industrial IoT Edge Devices
+  - Anomaly detection framework for IoT-enabled appliances using machine learning
+  - Multivariate Time Series Anomaly Detection with Few Positive Samples
+  - Real-Time Anomaly Detection for Industrial Robotic Arms Using Edge Computing
+  - Explainable Unsupervised Multi-Sensor Industrial Anomaly Detection and Categorization
+
+[记忆库/特征嵌入] 7 篇
+  - PNI: Industrial Anomaly Detection using Position and Neighborhood Information
+  - FAPM: Fast Adaptive Patch Memory for Real-Time Industrial Anomaly Detection
+  - FR-PatchCore: An Industrial Anomaly Detection Method for Improving Generalization
+  - SoftPatch+: Fully unsupervised anomaly classification and segmentation
+  - DMMGNet: A discrimination mapping and memory bank mean guidance-based network for high-performance few-shot industrial anomaly detection
+  - Divide and Conquer: High-Resolution Industrial Anomaly Detection via Memory Efficient Tiled Ensemble
+  - PNI : Industrial Anomaly Detection using Position and Neighborhood Information
+
+[多模态/3D] 4 篇
+  - EasyNet: An Easy Network for 3D Industrial Anomaly Detection
+  - 2M3DF: Advancing 3D Industrial Defect Detection With Multi-Perspective Multimodal Fusion Network
+  - Multi-modal digital twins for industrial anomaly detection: Framework, method, and application
+  - Accurate industrial anomaly detection with efficient multimodal fusion
+
+[蒸馏/师生网络] 3 篇
+  - Asymmetric Teacher–Student Feature Pyramid Matching for Industrial Anomaly Detection
+  - Industrial Anomaly Detection via Teacher Student Network
+  - LPFSTNet: A lightweight and parameter-free head attention-based student–teacher network for fast 3D industrial anomaly detection
+
+[大模型/零样本] 2 篇
+  - A SAM-guided Two-stream Lightweight Model for Anomaly Detection
+  - IAD-CLIP: Vision-Language Models for Zero-Shot Industrial Anomaly Detection
+
+[归一化流] 2 篇
+  - Self-supervised dual-layer 2D normalizing flow method for industrial anomaly detection
+  - UniFlow: Unified Normalizing Flow for Unsupervised Multi-Class Anomaly Detection
+
+=== Step 3.1: 年份分布 ===
+2021: # 1
+2022: #### 4
+2023: ########### 11
+2024: ##################### 21
+2025: ############# 13
+
+=== Step 3.2: 来源 Top (primary_location.source) ===
+11  unknown
+3  IEEE Transactions on Industrial Informatics
+3  Neurocomputing
+2  Sensors
+2  IEEE Transactions on Automation Science and Engineering
+2  Applied Sciences
+2  IEEE Transactions on Instrumentation and Measurement
+2  arXiv (Cornell University)
+1  Knowledge-Based Systems
+1  Applied Intelligence
+
+=== Step 3.3: 高频关键词 (OpenAlex keywords 字段) ===
+49  Computer science
+48  Anomaly detection
+47  Artificial intelligence
+33  Anomaly (physics)
+32  Pattern recognition (psychology)
+21  Data mining
+15  Physics
+15  Feature (linguistics)
+11  Mathematics
+11  Machine learning
+8  Computer vision
+8  Deep learning
+6  Feature extraction
+6  Image (mathematics)
+6  Artificial neural network
+
+=== Step 3.4: 内容构成 (type + 标题启发式) ===
+OpenAlex type: {'article': 45, 'review': 1, 'preprint': 3, 'book-chapter': 1}
+标题启发式: {'方法类': 43, '综述类': 2, '应用类': 5}
