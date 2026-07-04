@@ -28,6 +28,12 @@
 3. 每章完成 → 独立 agent 拷打 → 合入 manuscript/
 4. 里程碑：入门篇 3 章成稿后出第一版预览 PDF
 
+## 进度面板
+
+- Artifact 地址（固定，重部署不换链接）：https://claude.ai/code/artifact/6cf052a7-d3ed-4763-b00c-cb4d22d74882
+- 源文件在会话 scratchpad `greenbook-panel.html`；跨会话更新时用 Artifact 工具带 `url` 参数重部署
+- 定向四问结构（我在哪/流水线/十章看板/已完成+易错+下一步），进度变了就更新重发
+
 ## 素材指针
 
 - SR-DDPM 全程案例：paper-git 仓库 + `project_srddpm_ijabe_20260607` 记忆
