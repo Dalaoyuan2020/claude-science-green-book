@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0;width:1000px;height:760px;overflow:hidden;}
+  body{font-family:"PingFang SC","Hiragino Sans GB",sans-serif;background:#F2F7F3;}
+  .wrap{width:1000px;height:760px;padding:36px 60px;box-sizing:border-box;display:flex;flex-direction:column;}
+  h1{margin:0 0 6px;text-align:center;font-size:32px;color:#215E41;font-family:"Songti SC",serif;}
+  .sub{text-align:center;font-size:17px;color:#75857B;margin-bottom:22px;}
+  .stage{margin:0 auto 0;display:flex;flex-direction:column;align-items:center;}
+  .bar{border-radius:12px;color:#fff;display:flex;align-items:center;justify-content:center;gap:16px;font-size:22px;height:74px;}
+  .b1{width:840px;background:#A8473D;}
+  .b2{width:560px;background:#8F6C0C;}
+  .b3{width:360px;background:#1E7A4C;}
+  .b4{width:840px;background:#215E41;height:150px;border-radius:14px;flex-direction:column;gap:8px;}
+  .num{font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;}
+  .arrow{display:flex;align-items:center;gap:12px;height:52px;color:#47584F;font-size:18px;}
+  .arrow .a{font-size:26px;color:#1E7A4C;font-weight:800;}
+  .b4 .t{font-size:24px;font-weight:800;}
+  .b4 .d{font-size:18px;color:#CBE6D4;}
+  .foot{margin-top:18px;text-align:center;font-size:19px;color:#215E41;font-weight:700;}
+</style></head><body>
+<div class="wrap">
+  <h1>半小时，从翻车到摸清一个方向</h1>
+  <div class="sub">实测于 2026-07-04 · 方向：轻量化工业异常检测 · 数据源：OpenAlex（免费）</div>
+  <div class="stage">
+    <div class="bar b1"><span class="num">25,331 篇</span><span>第一把翻车：检索词太宽，根本读不完</span></div>
+    <div class="arrow"><span class="a">↓</span>收紧检索式（限定短语 + 轻量化词 + 2021 年起）</div>
+    <div class="bar b2"><span class="num">269 篇</span><span>命中都在本行了</span></div>
+    <div class="arrow"><span class="a">↓</span>按引用取前 50 条 → 去掉预印本重复</div>
+    <div class="bar b3"><span class="num">48 篇</span><span>值得分析的核心盘</span></div>
+    <div class="arrow"><span class="a">↓</span>自动统计 + 归派 + 判读</div>
+    <div class="bar b4">
+      <div class="t">📋 一页方向摸底报告</div>
+      <div class="d">年份分布（上升期）· 7 大流派地图 · 期刊主场 · 窗口提示（应用文仅 5 篇）</div>
+    </div>
+  </div>
+  <div class="foot">人只干了两件事：提出方向 + 读结论 &nbsp;·&nbsp; 传统方式：一周起步</div>
+</div>
+</body></html>

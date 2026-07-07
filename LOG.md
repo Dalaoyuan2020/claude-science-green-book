@@ -27,3 +27,13 @@
 - 主题：怎么在 Windows 上用上 Claude Science（接今天结尾的两个问题之一）
 - 公众号 Day 2 长文 + study-blog 第 2 篇精华版同步
 - §03 样章 PDF 待吕博验收
+
+## 2026-07-07 · Day 2 全线发布
+
+- 原版定稿 `articles/2026-07-06-day02.md`（3683 字，去AI味 100/100）：四座山→CSA三件套→先装后用→注意事项，五图齐
+- 精华版已上 study-blog（02-run-it-on-windows），公众号已发表（河小驴，摸鱼绿排版，图片全转存成功）
+- 小红书 3 卡已发（Claude Science 星芒钩子/真机截图/绿皮书种草）
+- 新增 `articles/assets/DESIGN_SPEC.md`（系列配图规范）+ 星空画芯 + HTML 模板产线
+- 公众号排版产线建立（gzh-design-skill 摸鱼绿，校验 0 ERROR），流水线文档在本地 gzh/WORKSPACE.md
+- ⚠️ 教训：公众号摘要/作者是独立字段，交付时必须显式提醒人工填
+- 待办：CSA Release v0.1.1（吕博传 zip）；Day 3「30 分钟摸清一个方向」
