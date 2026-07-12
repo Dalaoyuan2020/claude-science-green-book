@@ -4,6 +4,13 @@
 
 <p align="center"><img src="screenshots/cover.jpg" width="360" alt="Claude Science Green Book cover"/></p>
 
+<p align="center">
+  <b>🛠 配套工具 · CSA（Claude Science Assistant）</b><br/>
+  Windows 用户双击就能跑 Claude Science，还能接国产性价比模型省饭钱<br/>
+  <a href="https://github.com/Dalaoyuan2020/claude-science-assistant">👉 开源仓库</a> ·
+  <a href="https://github.com/Dalaoyuan2020/claude-science-assistant/releases">📦 下载最新版</a>
+</p>
+
 > 科研零基础不用慌，人人都能发 SCI。
 > 用 Claude Code 跑通「选题 → 文献 → 写作 → 审稿 → 投稿」全流程的实战手册。
 

@@ -4,6 +4,13 @@
 
 <p align="center"><img src="screenshots/cover.jpg" width="360" alt="Claude Science Green Book cover"/></p>
 
+<p align="center">
+  <b>🛠 Companion tool · CSA (Claude Science Assistant)</b><br/>
+  Run Claude Science on Windows with a double-click; plug in cost-effective Chinese models to save on bills<br/>
+  <a href="https://github.com/Dalaoyuan2020/claude-science-assistant">👉 Open-source repo</a> ·
+  <a href="https://github.com/Dalaoyuan2020/claude-science-assistant/releases">📦 Download latest</a>
+</p>
+
 > Zero research background? No panic. A hands-on manual for running the full academic pipeline — topic → literature → writing → review → submission — with Claude Code.
 
 ## Who this book is for
