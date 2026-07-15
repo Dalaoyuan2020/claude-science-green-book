@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>day02精华版_排版_摸鱼绿(moyu-green) · 公众号排版预览</title>
+<style>
+  body{margin:0;background:#eef0f2;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;-webkit-text-size-adjust:100%;}
+  .gzh-toolbar{position:fixed;top:0;left:0;right:0;height:54px;background:#ffffff;box-shadow:0 1px 10px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:99;}
+  .gzh-hint{font-size:13px;color:#6b7280;line-height:1.4;}
+  .gzh-hint b{color:#111827;}
+  .gzh-copy{background:#059669;color:#fff;border:0;border-radius:9px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(5,150,105,.28);white-space:nowrap;transition:transform .08s,background .15s;}
+  .gzh-copy:hover{background:#047857;}
+  .gzh-copy:active{transform:translateY(1px);}
+  .gzh-toast{position:fixed;top:66px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .25s;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.25);max-width:88vw;text-align:center;}
+  .gzh-toast.show{opacity:1;}
+  .gzh-stage{max-width:700px;margin:78px auto 64px;padding:0 8px;}
+  @media(max-width:520px){.gzh-hint{max-width:150px;}}
+</style>
+</head>
+<body>
+<div class="gzh-toolbar">
+  <span class="gzh-hint">👇 下方是排版效果 · 点右侧 <b>复制</b> 直接粘到公众号</span>
+  <button class="gzh-copy" id="gzhCopyBtn" onclick="gzhCopy()">📋 复制到公众号</button>
+</div>
+<div class="gzh-toast" id="gzhToast"></div>
+<div class="gzh-stage">
+  <div id="gzh-content">
+<section style="max-width:677px;margin:0 auto;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
+
+<section style="margin:0 0 32px;background:#fff;border:1.5px solid rgba(5,150,105,0.15);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);width:100%;">
+  <section style="padding:32px 28px 28px;">
+    <section style="display:flex;align-items:center;gap:8px;margin-bottom:28px;">
+      <span style="width:6px;height:6px;background:#059669;border-radius:50%;"><span leaf=""><br></span></span>
+      <span style="font-size:11px;font-weight:700;letter-spacing:3px;color:#059669;"><span leaf="">GREEN BOOK · DAY 02</span></span>
+      <section style="flex:1;height:1px;overflow:hidden;background:linear-gradient(to right,rgba(5,150,105,0.12),transparent);"><span leaf=""><br></span></section>
+      <span style="font-size:10px;color:#D1D5DB;font-weight:600;"><span leaf="">2026.07</span></span>
+    </section>
+    <section style="display:flex;align-items:center;gap:20px;">
+      <section style="flex:1;min-width:0;">
+        <p style="font-size:15px;color:#D1D5DB;margin:0 0 6px;text-decoration:line-through;letter-spacing:0.5px;">
+          <span leaf="">环境不会配，就用不上它？</span>
+        </p>
+        <p style="font-size:24px;font-weight:900;color:#111827;margin:0;line-height:1.05;letter-spacing:-2px;">
+          <span leaf="">四座山，</span>
+          <span style="color:#059669;"><span leaf="">一个启动器</span></span>
+        </p>
+        <p style="font-size:24px;font-weight:900;color:#059669;margin:0 0 16px;line-height:1.05;letter-spacing:-2px;">
+          <span leaf="">替你全翻过去</span>
+        </p>
+        <section style="width:48px;height:3px;background:linear-gradient(to right,#059669,#34D399);border-radius:2px;margin-bottom:12px;">
+          <span leaf=""><br></span>
+        </section>
+        <p style="font-size:13px;color:#9CA3AF;margin:0;line-height:1.7;letter-spacing:0.5px;">
+          <span leaf="">CSA 开源上线 · 接国产模型 · 三步上手</span>
+        </p>
+      </section>
+      <section style="flex-shrink:0;width:110px;height:110px;border-radius:16px;overflow:hidden;border:1px solid rgba(5,150,105,0.1);box-shadow:0 4px 12px rgba(0,0,0,0.06);">
+        <span leaf=""><img src="https://dalaoyuan2020.github.io/study-blog/day02-cover-csa.png" style="width:100%;height:100%;display:block;"></span>
+      </section>
+    </section>
+  </section>
+  <section style="background:linear-gradient(135deg,#059669,#10B981);padding:12px 28px;display:flex;align-items:center;justify-content:space-between;">
+    <p style="font-size:12px;color:rgba(255,255,255,0.9);margin:0;font-weight:600;letter-spacing:0.5px;">
+      <span leaf="">Claude Science 绿皮书 · 连载第 2 天</span>
+    </p>
+    <section style="display:flex;gap:4px;">
+      <span style="background:rgba(255,255,255,0.2);padding:1px 6px;border-radius:3px;font-size:8px;color:#fff;font-weight:600;"><span leaf="">CSA</span></span>
+      <span style="background:rgba(255,255,255,0.2);padding:1px 6px;border-radius:3px;font-size:8px;color:#fff;font-weight:600;"><span leaf="">开源</span></span>
+    </section>
+  </section>
+</section>
+
+<section style="margin:0 20px 32px;">
+  <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+    <p style="font-size:10px;color:#9CA3AF;margin:0;text-transform:uppercase;letter-spacing:2px;font-weight:600;">
+      <span leaf="">📦 4 Parts + Conclusion</span>
+    </p>
+    <p style="font-size:10px;color:#9CA3AF;margin:0;">
+      <span leaf="">👉 滑动</span>
+    </p>
+  </section>
+  <section style="overflow-x:scroll;-webkit-overflow-scrolling:touch;white-space:nowrap;padding-bottom:8px;">
+    <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:linear-gradient(135deg,#059669,#10B981);border-radius:12px;padding:12px;margin-right:8px;">
+      <p style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.7);letter-spacing:1px;margin:0 0 5px;">
+        <span leaf="">PART 01</span>
+      </p>
+      <p style="font-size:13px;font-weight:800;color:#fff;margin:0 0 3px;">
+        <span leaf="">请进门的是谁</span>
+      </p>
+      <p style="font-size:10px;color:rgba(255,255,255,0.7);margin:0;">
+        <span leaf="">值不值得折腾</span>
+      </p>
+    </section>
+    <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;margin-right:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+      <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+        <span leaf="">PART 02</span>
+      </p>
+      <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+        <span leaf="">第一步就卡死</span>
+      </p>
+      <p style="font-size:10px;color:#9CA3AF;margin:0;">
+        <span leaf="">挡路的四座山</span>
+      </p>
+    </section>
+    <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;margin-right:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+      <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+        <span leaf="">PART 03</span>
+      </p>
+      <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+        <span leaf="">CSA 怎么解</span>
+      </p>
+      <p style="font-size:10px;color:#9CA3AF;margin:0;">
+        <span leaf="">三件套＋省钱</span>
+      </p>
+    </section>
+    <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;margin-right:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+      <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+        <span leaf="">PART 04</span>
+      </p>
+      <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+        <span leaf="">三步上手</span>
+      </p>
+      <p style="font-size:10px;color:#9CA3AF;margin:0;">
+        <span leaf="">附照抄 Prompt</span>
+      </p>
+    </section>
+    <section style="display:inline-block;white-space:normal;vertical-align:top;width:110px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+      <p style="font-size:9px;font-weight:700;color:#9CA3AF;letter-spacing:1px;margin:0 0 5px;">
+        <span leaf="">PART ///</span>
+      </p>
+      <p style="font-size:13px;font-weight:800;color:#111827;margin:0 0 3px;">
+        <span leaf="">写在最后</span>
+      </p>
+      <p style="font-size:10px;color:#9CA3AF;margin:0;">
+        <span leaf="">注意事项＋预告</span>
+      </p>
+    </section>
+  </section>
+</section>
+
+<section style="background:#FFF;border:1px dashed #BBF7D0;border-radius:8px;padding:14px 16px;margin:0 20px 24px;text-align:center;">
+  <p style="font-size:12px;color:#9CA3AF;margin:0 0 6px;line-height:1.5;">
+    <span leaf="">一句话说清今天的解法</span>
+  </p>
+  <p style="margin:0;line-height:1.6;">
+    <span style="font-size:15px;color:#059669;font-weight:bold;border-bottom:3px solid #FDE68A;padding-bottom:2px;"><span leaf="">双击一个图标，把 Claude Science 跑起来</span></span>
+  </p>
+</section>
+
+<section style="padding:0 20px;">
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">Day 1 发出去，后台立刻有人举手：搭档听着好，可我这台是 </span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">Windows，装不了</span></span><span leaf="">。</span>
+  </p>
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">这声「装不了」太熟了。你打开官网点下载，只有 Mac 和 Linux；去搜教程，一头扎进 WSL2、Ubuntu、端口转发的天书，PowerShell 还蹦红字。</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">你是来做科研的，不是来当运维的</span></span><span leaf="">。</span>
+  </p>
+  <p style="margin-bottom:24px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">今天这篇就是来接你过坎的：我们做了个免费开源的小工具 </span><strong style="color:#059669;"><span leaf="">CSA</span></strong><span leaf="">，Windows 双击一个图标就能把 Claude Science 跑起来，顺带还能</span><span style="background:linear-gradient(120deg,#FDE68A 0%,rgba(255,255,255,0) 100%);padding:0 4px;border-radius:2px;font-weight:600;color:#111827;"><span leaf="">接国产大模型省饭钱</span></span><span leaf="">。</span>
+  </p>
+</section>
+
+<section style="margin-top:16px;margin-bottom:32px;padding:0 20px;">
+  <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <section style="text-align:center;flex-shrink:0;">
+      <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+        <span leaf="">01</span>
+      </p>
+      <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+        <span leaf="">PART</span>
+      </p>
+    </section>
+    <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+    <section>
+      <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+        <span leaf="">先看清楚，你要请进门的是谁</span>
+      </p>
+      <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+        <span leaf="">WHO · 值不值得折腾</span>
+      </p>
+    </section>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">别为装不上的东西死磕，先掂量它</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">值不值得折腾</span></span><span leaf="">。</span>
+  </p>
+
+  <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+    <section style="margin:0;border-radius:8px;overflow:hidden;">
+      <span leaf=""><img src="https://dalaoyuan2020.github.io/study-blog/day02-official-page.png" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+    </section>
+  </section>
+  <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+    <span leaf="">— claude.com/science 官方页面</span>
+  </p>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">Claude Science 是 Anthropic 的官方科研产品，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">不是我们做的，我们是教你把它用好的</span></span><span leaf="">。它跟聊天 AI 差在根子上：</span><strong style="color:#059669;"><span leaf="">聊天框帮你想，它帮你做</span></strong><span leaf="">。你说查文献，它真去调数据库、自己存档、自己统计成表，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">每个数字留底账</span></span><span leaf="">，背后还蹲个审查员盯错引用。</span>
+  </p>
+
+  <section style="background:#F9FAFB;border:1px dashed #D1D5DB;border-radius:8px;padding:12px 16px;margin-bottom:24px;text-align:justify;">
+    <p style="font-size:13px;color:#374151;margin:0;line-height:1.6;">
+      <span leaf="">Day 1 那单综述：交稿前它把自己 4 处「作者姓氏张冠李戴」的引用揪出来改了，那种</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">人眼根本查不出的错</span></span><span leaf="">。这种活，才是你想请它进门的理由。</span>
+    </p>
+  </section>
+</section>
+
+<section style="margin-top:48px;margin-bottom:32px;padding:0 20px;">
+  <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <section style="text-align:center;flex-shrink:0;">
+      <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+        <span leaf="">02</span>
+      </p>
+      <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+        <span leaf="">PART</span>
+      </p>
+    </section>
+    <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+    <section>
+      <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+        <span leaf="">可你想装它，第一步就卡死</span>
+      </p>
+      <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+        <span leaf="">BLOCKED · 挡路的四座山</span>
+      </p>
+    </section>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">官网「Download now」点开：Mac、Linux，</span><span style="border-bottom:2px solid #FECACA;"><span leaf="">独独没有 Windows</span></span><span leaf="">。</span>
+  </p>
+
+  <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+    <section style="margin:0;border-radius:8px;overflow:hidden;">
+      <span leaf=""><img src="https://dalaoyuan2020.github.io/study-blog/day02-no-windows.png" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+    </section>
+  </section>
+  <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+    <span leaf="">— 官方下载菜单实拍整理，查证于 2026-07-06</span>
+  </p>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">卡住你的不止「少个按钮」，是背后</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">四座山</span></span><span leaf="">：</span>
+  </p>
+
+  <section style="margin-bottom:24px;">
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">1</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">它是给 Linux 生的：Windows 上得先装一层 WSL2，再塞个 Ubuntu，再配端口转发，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">每个词都够你搜半小时</span></span>
+      </p>
+    </section>
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">2</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">接口各说各话：国产模型、聚合平台、第三方接口，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">协议五花八门</span></span>
+      </p>
+    </section>
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">3</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">名字对不上：Claude 喊 sonnet、opus，国产叫 glm-5.2、deepseek-v4-pro，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">没人翻译就对不上号</span></span>
+      </p>
+    </section>
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">4</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">Key 一堆还烫手：多平台 API Key 要存、要切、要测，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">还不能泄漏在日志截图里</span></span>
+      </p>
+    </section>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">每座山对程序员是半小时，对普通科研人是一堵墙。卡住你的从来不是「不会写 Prompt」，</span><span style="background:linear-gradient(120deg,#FDE68A 0%,rgba(255,255,255,0) 100%);padding:0 4px;border-radius:2px;font-weight:600;color:#111827;"><span leaf="">是第一步就被环境糊一脸</span></span><span leaf="">。</span>
+  </p>
+</section>
+
+<section style="margin-top:48px;margin-bottom:32px;padding:0 20px;">
+  <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <section style="text-align:center;flex-shrink:0;">
+      <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+        <span leaf="">03</span>
+      </p>
+      <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+        <span leaf="">PART</span>
+      </p>
+    </section>
+    <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+    <section>
+      <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+        <span leaf="">CSA 怎么解：麻烦都在你看不见的地方</span>
+      </p>
+      <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+        <span leaf="">SOLUTION · 三件套＋省钱彩蛋</span>
+      </p>
+    </section>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">CSA 不是新大模型，也不玩灰色手段，干的事一句话：</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">四座山替你翻过去</span></span><span leaf="">。拆开三样：</span>
+  </p>
+
+  <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+    <section style="margin:0;border-radius:8px;overflow:hidden;">
+      <span leaf=""><img src="https://dalaoyuan2020.github.io/study-blog/day02-four-mountains.png" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+    </section>
+  </section>
+  <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+    <span leaf="">— 四座山 vs CSA 三件套</span>
+  </p>
+
+  <section style="margin-bottom:14px;">
+    <p style="margin:0 0 6px;">
+      <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">你看到的</span></span>
+    </p>
+    <p style="font-size:13px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+      <span leaf="">一个双击就开的面板：体检、加 Key、测连通、启动，四下点鼠标</span>
+    </p>
+  </section>
+  <section style="margin-bottom:14px;">
+    <p style="margin:0 0 6px;">
+      <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">你看不到的</span></span>
+    </p>
+    <p style="font-size:13px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+      <span leaf="">后台替你把 WSL、Ubuntu、运行时那套默默铺好，再架个本地「翻译官」，把 Claude 的话翻成上游模型听得懂的</span>
+    </p>
+  </section>
+  <section style="margin-bottom:24px;">
+    <p style="margin:0 0 6px;">
+      <span style="display:inline-block;font-size:13px;font-weight:700;color:#059669;background:rgba(5,150,105,0.08);padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#059669;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">最省心的</span></span>
+    </p>
+    <p style="font-size:13px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+      <span leaf="">自动模型映射：扫一遍你接的平台，自动配好「主力活给大模型、跑腿活给便宜快模型」，你点个确认就成</span>
+    </p>
+  </section>
+
+  <section style="background:#FFF;border:1px dashed #BBF7D0;border-radius:8px;padding:14px 16px;margin-bottom:24px;text-align:center;">
+    <p style="margin:0;line-height:1.6;">
+      <span style="font-size:15px;color:#059669;font-weight:bold;border-bottom:3px solid #FDE68A;padding-bottom:2px;"><span leaf="">你只管点鼠标，脏活累活它在你看不见的地方干完了</span></span>
+    </p>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">还有个顺带的彩蛋。Day 1 提醒过这搭档有两个坑：一是不支持 Windows，二是烧钱。头一个坑，这篇从头到尾都在替你填；第二个坑，靠那个「翻译官」也省下一大截：GLM、LongCat、DeepSeek、MiniMax 都能官方直连，还支持聚合平台。价格你去官网自己比，我只撂一句：</span><span style="background:linear-gradient(120deg,#FDE68A 0%,rgba(255,255,255,0) 100%);padding:0 4px;border-radius:2px;font-weight:600;color:#111827;"><span leaf="">贵的活留给官方 Claude，日常粗活扔给国产模型</span></span><span leaf="">，一个月的饭钱立刻不是一个数量级。</span>
+  </p>
+</section>
+
+<section style="margin-top:48px;margin-bottom:32px;padding:0 20px;">
+  <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <section style="text-align:center;flex-shrink:0;">
+      <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+        <span leaf="">04</span>
+      </p>
+      <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+        <span leaf="">PART</span>
+      </p>
+    </section>
+    <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+    <section>
+      <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+        <span leaf="">上手：先让 AI 装好，再用启动器跑</span>
+      </p>
+      <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+        <span leaf="">HANDS-ON · 三步＋照抄 Prompt</span>
+      </p>
+    </section>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">先说清楚，它</span><span style="border-bottom:2px solid #FECACA;"><span leaf="">不是下下来双击就能用</span></span><span leaf="">：得先让一个 AI 编程助手照仓库内置的</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">安装 skill</span></span><span leaf="">把底层装好，再用启动器跑。装这段你只做三件事：</span>
+  </p>
+
+  <section style="margin-bottom:24px;">
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">1</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">打开 CSA 的 GitHub 仓库，首页 README 一步步教你下载（</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">认准官方仓库</span></span><span leaf="">，群文件、网盘里的一律别碰）</span>
+      </p>
+    </section>
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">2</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">解压到一个短路径，比如 </span><span style="background:#F3F4F6;color:#1F2937;padding:2px 6px;border-radius:4px;font-size:13px;font-weight:600;"><span leaf="">C:\CSA</span></span><span leaf="">（</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">整个文件夹都要</span></span><span leaf="">，别只拷 exe）</span>
+      </p>
+    </section>
+    <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#059669;color:#fff;font-size:11px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">3</span></span>
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.9;flex:1;">
+        <span leaf="">把文件夹交给 AI 编程助手（Codex、Claude Code 都行），发它下面这段，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">让它照安装 skill 替你装</span></span>
+      </p>
+    </section>
+  </section>
+
+  <section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+    <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
+      <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+      <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+      <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+      <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">PROMPT</span></span>
+    </section>
+    <section style="padding:11px 14px;">
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">请你帮我在这台 Windows 电脑上安装并启动 CSA（Claude Science Assistant）。</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">请先阅读当前文件夹里的 README.md、docs/quick-start.zh-CN.md，以及安装 skill：skills/bootstrap-claude-science-wsl/SKILL.md。</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">　</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">要求：</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">1. 先只读体检和预览，不要安装、删除、重启或修改系统</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">2. 判断这台电脑是否已有可用 WSL/Ubuntu，把将要做的事说给我听，我确认后再动手</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">3. 不要修改系统网络设置（DNS、hosts、代理、证书一概不动）</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">4. 不要输出、保存或截图我的 API Key</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">5. 装完打开 claude-science-assistant.exe，指导我添加 API Key、测试连通、自动映射模型</span></p>
+      <p style="margin:0;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;line-height:1.6;color:#E2E8F0;"><span leaf="">6. 如果失败，生成脱敏的诊断摘要，告诉我卡在哪一步</span></p>
+    </section>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">眼熟吗？跟 Day 1 送的综述模板一个思路：</span><strong style="color:#059669;"><span leaf="">先立规矩，再干活</span></strong><span leaf="">。只读体检、不乱动系统、不碰你的 Key。AI 助手能帮你到什么程度，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">是你喂给它的规矩决定的</span></span><span leaf="">。</span>
+  </p>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">装完，才轮到启动器登场：加 Key → 测试 → 自动映射 → 启动，四下点完，</span><span style="background:linear-gradient(120deg,#FDE68A 0%,rgba(255,255,255,0) 100%);padding:0 4px;border-radius:2px;font-weight:600;color:#111827;"><span leaf="">搭档就在你的 Windows 上活过来了</span></span><span leaf="">。</span>
+  </p>
+</section>
+
+<section style="margin-top:48px;margin-bottom:32px;padding:0 20px;">
+  <section style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <section style="text-align:center;flex-shrink:0;">
+      <p style="margin:0;font-size:28px;font-weight:900;color:#059669;line-height:1;letter-spacing:-2px;">
+        <span leaf="">///</span>
+      </p>
+      <p style="margin:0;font-size:8px;font-weight:700;color:#D1D5DB;letter-spacing:2px;">
+        <span leaf="">LAST</span>
+      </p>
+    </section>
+    <span style="width:1px;height:36px;background:#E5E7EB;flex-shrink:0;"><span leaf=""><br></span></span>
+    <section>
+      <p style="margin:0 0 1px;font-size:17px;font-weight:900;color:#111827;letter-spacing:0.3px;">
+        <span leaf="">写在最后</span>
+      </p>
+      <p style="margin:0;font-size:11px;font-weight:600;color:#9CA3AF;letter-spacing:1.5px;">
+        <span leaf="">NOTES · 注意事项＋明日预告</span>
+      </p>
+    </section>
+  </section>
+
+  <section style="padding:6px 0 4px;margin-bottom:16px;">
+    <p style="margin-bottom:6px;font-size:12px;font-weight:700;color:#9CA3AF;letter-spacing:1px;">
+      <span style="color:#059669;"><span leaf="">✦ 注意事项</span></span>
+    </p>
+    <p style="font-size:13px;color:#374151;margin:0 0 8px;line-height:1.7;">
+      <span leaf="">· 第三方接口服务，CSA </span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">不默认信任</span></span><span leaf="">，要你亲手确认域名后才把 Key 发过去。这是特性，不是麻烦</span>
+    </p>
+    <p style="font-size:13px;color:#374151;margin:0 0 8px;line-height:1.7;">
+      <span leaf="">· API Key 用 Windows 系统级加密（DPAPI）锁在本地，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">别人拷走整个文件夹也带不走</span></span>
+    </p>
+    <p style="font-size:13px;color:#374151;margin:0;line-height:1.7;">
+      <span leaf="">· v0.1.1 是第一个公开版，坑肯定有。README 备了自动脱敏的诊断脚本和答疑入口，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">卡住了别一个人硬撞</span></span>
+    </p>
+  </section>
+
+  <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+    <section style="margin:0;border-radius:8px;overflow:hidden;">
+      <span leaf=""><img src="https://dalaoyuan2020.github.io/study-blog/day02-mascot.png" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+    </section>
+  </section>
+  <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+    <span leaf="">— 装好这一刻起，熬夜跑流程的活它接手了</span>
+  </p>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">明天 Day 3，带你干第一票真活：</span><strong style="color:#059669;"><span leaf="">30 分钟摸清一个研究方向</span></strong><span leaf="">。就是 Day 1 案例里那套查文献、画流派地图、数空位的活，这回手把手，带你在自己的方向上从头跑一遍。</span>
+  </p>
+
+  <section style="background:#F0FDF4;padding:12px 16px;border-radius:8px;border:1px solid #BBF7D0;margin-bottom:20px;">
+    <p style="font-size:13px;color:#374151;margin:0;line-height:1.7;text-align:justify;">
+      <span leaf="">工具与全书素材免费开源，GitHub 搜仓库名：</span><span style="background:#FDE68A;color:#1F2937;padding:2px 6px;border-radius:4px;font-size:13px;font-weight:700;"><span leaf="">claude-science-assistant</span></span><span leaf="">（工具）｜</span><span style="background:#FDE68A;color:#1F2937;padding:2px 6px;border-radius:4px;font-size:13px;font-weight:700;"><span leaf="">claude-science-green-book</span></span><span leaf="">（绿皮书）</span>
+    </p>
+  </section>
+
+  <p style="margin-bottom:16px;font-size:14px;line-height:1.9;text-align:justify;">
+    <span leaf="">我是河小驴，正在连载《Claude Science 绿皮书》：帮你从零基础开始完成自己的课题，</span><span style="border-bottom:2px solid #A7F3D0;font-weight:600;"><span leaf="">人人都能发 SCI</span></span><span leaf="">。</span>
+  </p>
+</section>
+
+<section style="background:radial-gradient(circle at center,#F9FAFB 0%,#FFFFFF 100%);border:1px solid #E5E7EB;border-radius:16px;padding:32px 20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.03);margin:0 0 24px;">
+  <p style="font-size:13px;font-weight:bold;color:#111827;margin-bottom:20px;line-height:1.6;">
+    <span leaf="">既然看到这里了，如果觉得有用，随手点个赞、在看、转发三连吧。</span>
+  </p>
+  <section style="display:flex;justify-content:center;gap:24px;margin-bottom:16px;">
+    <section style="text-align:center;cursor:pointer;color:#4B5563;">
+      <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#fff;border-radius:12px;box-shadow:0 2px 4px rgba(0,0,0,0.05);border:1px solid #F3F4F6;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+      </section>
+      <span style="font-size:10px;font-weight:600;"><span leaf="">点赞</span></span>
+    </section>
+    <section style="text-align:center;cursor:pointer;color:#4B5563;">
+      <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#fff;border-radius:12px;box-shadow:0 2px 4px rgba(0,0,0,0.05);border:1px solid #F3F4F6;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path></svg>
+      </section>
+      <span style="font-size:10px;font-weight:600;"><span leaf="">在看</span></span>
+    </section>
+    <section style="text-align:center;cursor:pointer;color:#059669;">
+      <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#ECFDF5;border-radius:12px;box-shadow:0 2px 4px rgba(5,150,105,0.15);border:1px solid #A7F3D0;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18v-4a8 8 0 0 1 8-8h8"></path><polyline points="16 2 20 6 16 10"></polyline></svg>
+      </section>
+      <span style="font-size:10px;font-weight:600;"><span leaf="">转发</span></span>
+    </section>
+  </section>
+  <p style="font-size:10px;color:#9CA3AF;letter-spacing:1px;margin:0;">
+    <span leaf="">THANKS FOR READING</span>
+  </p>
+</section>
+
+</section>
+  </div>
+</div>
+<script>
+  function gzhShowToast(msg){
+    var t=document.getElementById('gzhToast');
+    t.textContent=msg;t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer=setTimeout(function(){t.classList.remove('show');},2800);
+  }
+  function gzhCopy(){
+    var el=document.getElementById('gzh-content');
+    // 选中渲染后的富文本节点并复制（等价于手动 Ctrl+A / Ctrl+C，保留全部样式）
+    var range=document.createRange();
+    range.selectNodeContents(el);
+    var sel=window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){ok=false;}
+    sel.removeAllRanges();
+    var btn=document.getElementById('gzhCopyBtn');
+    if(ok){
+      gzhShowToast('✅ 已复制！去公众号编辑器按 Ctrl/⌘+V 粘贴即可');
+      var old=btn.textContent;btn.textContent='✅ 已复制';
+      setTimeout(function(){btn.textContent=old;},2200);
+    }else{
+      gzhShowToast('⚠ 自动复制失败，请手动全选(Ctrl/⌘+A)再复制(Ctrl/⌘+C)');
+    }
+  }
+</script>
+</body>
+</html>

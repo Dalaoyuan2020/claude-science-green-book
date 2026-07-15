@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;overflow:hidden}
+body{background:linear-gradient(165deg,#1E9160 0%,#0B5138 100%);font-family:"PingFang SC",sans-serif;padding:52px 46px 46px}
+.head{text-align:center;margin-bottom:26px}
+.pill{display:inline-block;font-size:19px;font-weight:800;color:#0E5237;background:#B9E9CF;border-radius:100px;padding:7px 22px;letter-spacing:2px}
+h1{font-family:"Yuanti SC","PingFang SC",sans-serif;font-size:66px;font-weight:900;color:#fff;margin:18px 0 8px;letter-spacing:1px;line-height:1.15}
+.sub{font-size:21px;color:#B9E9CF;font-weight:600}
+.card{background:#fff;border-radius:22px;padding:26px 28px 22px}
+.gate{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.gate .n{width:30px;height:30px;border-radius:9px;background:#0B5138;color:#fff;font-size:17px;font-weight:900;display:flex;align-items:center;justify-content:center;flex:none}
+.gate .t{font-size:25px;font-weight:900;color:#0B5138}
+.gate .tag{margin-left:auto;font-size:14px;font-weight:800;color:#B45309;background:#FEF3C7;border-radius:6px;padding:4px 11px}
+.four{display:flex;flex-direction:column;gap:9px;margin-bottom:24px}
+.it{display:flex;align-items:center;gap:13px;background:#FFFCF0;border:2px solid #FCD9A0;border-radius:13px;padding:13px 16px}
+.it .k{font-size:21px;font-weight:900;color:#0B5138;width:196px;flex:none}
+.it .v{font-size:18px;color:#4b5563;line-height:1.45}
+.it .v b{color:#B45309}
+.split{display:flex;gap:12px;margin-bottom:20px}
+.col{flex:1;background:#F2F7F3;border-radius:15px;padding:17px 18px}
+.col .ct{font-size:19px;font-weight:900;color:#0F6647;margin-bottom:4px}
+.col .cs{font-size:14px;color:#9CA3AF;margin-bottom:12px;font-weight:600}
+.col .li{font-size:16px;color:#374151;line-height:2.05}
+.col .li i{font-style:normal;color:#9CA3AF}
+.bot{background:#0B5138;border-radius:15px;padding:17px 20px;text-align:center}
+.bot .bt{font-size:13px;color:#6EE7B7;font-weight:800;letter-spacing:3px;margin-bottom:7px}
+.bot .bb{font-size:21px;color:#fff;font-weight:800;line-height:1.55}
+.sign{margin-top:20px;text-align:center;font-size:17px;color:#B9E9CF;font-weight:700}
+</style></head><body>
+<div class="head">
+  <span class="pill">Claude Science 绿皮书 · 06</span>
+  <h1>设置中心，只用改 4 个</h1>
+  <div class="sub">十一个面板，剩下七个用到再说</div>
+</div>
+
+<div class="card">
+  <div class="gate">
+    <div class="n">✓</div><div class="t">开机就改这四条</div><div class="tag">照着抄</div>
+  </div>
+  <div class="four">
+    <div class="it"><div class="k">Licensing</div><div class="v">改成 <b>Non-commercial</b>，不改会被开源组件的授权确认拦</div></div>
+    <div class="it"><div class="k">Contact email</div><div class="v">填上。爬 NCBI / EBI 要带身份，<b>不填被限流</b></div></div>
+    <div class="it"><div class="k">Memory</div><div class="v"><b>默认是关的</b>，手动开。存本地，不外传</div></div>
+    <div class="it"><div class="k">Storage</div><div class="v">挪出 C 盘。<b>Conda 环境一个就 8.3 GB</b></div></div>
+  </div>
+
+  <div class="split">
+    <div class="col">
+      <div class="ct">Capabilities</div>
+      <div class="cs">能力配置 · 6 个</div>
+      <div class="li">
+        Skills <i>官方那 16 个全是生物向</i><br>
+        Connectors <i>拉不出是网络，不是坏了</i><br>
+        Specialists <i>投稿前切 Reviewer</i><br>
+        Memory <i>开</i><br>
+        Compute <i>保持 Local</i><br>
+        Network <i>装包慢再配</i>
+      </div>
+    </div>
+    <div class="col">
+      <div class="ct">Workspace</div>
+      <div class="cs">工作区设置 · 5 个</div>
+      <div class="li">
+        Permissions <i>给多了 Revoke all</i><br>
+        Credentials <i>用到哪个填哪个</i><br>
+        Storage <i>换盘在这</i><br>
+        Usage <i>审查员吃掉 47%</i><br>
+        General <i>授权和邮箱在这改</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="bot">
+    <div class="bt">一句带走</div>
+    <div class="bb">设置在左下角那个齿轮里<br>上面配它的能力，下面配你的工作区</div>
+  </div>
+</div>
+
+<div class="sign">@河小驴 · 边用边写，把坑都记下来</div>
+</body></html>

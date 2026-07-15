@@ -1,0 +1,107 @@
+一、claude是什么
+[图]
+二、功能介绍
+[图]
+1.  Delegation（任务委派）
+科研作用：遇到复杂的科研任务（比如“帮我生成一份包含10篇顶级期刊引用的文献综述”），开启后它会自动拆解步骤，去调用其他辅助工具或模型协同完成。
+建议：日常写一段话通常不需要，处理大型资料时可以开。
+2.  Notebook（笔记本）—— 当前：可点击切换
+功能：这是一个内置的交互式代码运行环境（类似 Jupyter Notebook 或专门的代码沙盒）的快捷入口。
+科研场景：由于您提到了“出版级图表”和统计分析，这个功能尤为重要。当 AI 需要绘制高级图表、运行回归模型（如您之前提供的线性回归计算）、做特征工程时，它不是凭空生成代码给你，而是直接在这个 Notebook 里执行 Python 或 R 语言代码。你可以实时查看数据运行的过程、输出的图表和计算数值。
+建议：如果 AI 给出了一段画图代码或数据分析结论，建议直接点击这个“Notebook”切换到代码环境里看一眼。一是为了核实计算结果（确保统计学数值无误），二是它可以作为你的项目工作流记录，方便你下次直接复用这段代码处理同一批数据。
+3.  2 active subagents（2个活跃的子智能体）—— 当前：后台运行中
+功能：这是一个多智能体协作状态指示器。当 Claude 觉得自己当前面临的任务过于复杂或专业时，它会自动在后台唤醒专门的“子智能体”（Subagents）来协同工作。
+科研场景：在学术写作中，主 AI 可能正在为你撰写引言，而这两个活跃的子智能体可能同时在后台执行并行任务。例如：一个正在通过 CrossRef 检索相关参考文献的真实链接，另一个正在用 Python 分析你上传的原始实验数据。它们彼此配合，最终将综合结果反馈给你。
+建议：看到这个提示通常意味着 AI 正在处理较重的任务，不要打断它。等它变为 0 后，它会一次性输出完整的、经过深度处理的答案。若你发现输出的结果有缺失，可以点击这个图标查看它在后台具体执行了什么动作。
+[图]
+4.  Auto-review（自动审查）
+科研作用：强烈建议保持开启。它会自动审查自己输出的内容。
+突出优势：在科研场景下，它能帮你自动检查参考文献格式、统计数据的逻辑合理性、代码是否有报错、甚至图表的生成质量。减少你肉眼挑错的精力。
+5.  Memory（上下文记忆）
+科研作用：开启后，它会把你的论文主题、目标期刊（比如 Nature 或 Science）、写作偏好存进“长期记忆”。
+突出优势：下次你新建一个对话窗口写下一章节时，它不需要你重复喂背景（Prompt），就能直接沿用之前的专业口吻来写。
+6. Specialist（专家模式）
+科研作用：这是下拉菜单，用于切换“专精角色”。
+突出优势：写方法论时，可以选“统计学家”；讨论生物学机制时，可以选“分子生物学家”。它会内部调取更专业的提示词（Prompt），让措辞更硬核、更精确。当前选 None 就是通用的助手。
+7. Compute（计算引擎）—— 当前：Local（本地）
+科研作用：决定跑代码、做统计运算、生成图表的计算地点。
+Local（本地）：代码和未发表的数据只在你电脑上运行和渲染。
+三、自定义配置
+[图]
+第一部分：Capabilities（核心能力模块）
+1. Skills（技能面板）
+界面布局：
+顶部：左侧下拉筛选框 All (16)，右侧搜索框 Search skills...，以及下拉添加按钮 + Add skill。
+核心区块：分为三大类。
+Featured >（官方精选技能）。
+Imported >（从 GitHub 导入的技能，界面右侧有专门的 Import from GitHub 按钮）。
+Personal >（个人自定义编写的专属技能）。
+底层逻辑：这是一个“能力插件市场”，可以通过 GitHub 或自己编写来赋予 AI 特定的科研能力
+[图]
+2. Connectors（连接器面板）
+界面布局：
+顶部：下拉筛选 All (24)，搜索框，以及 + Add connector 按钮。
+核心区块：目录（Directory），右侧有对应的开关。目前显示已连通的数据库有：bioRxiv、ChEMBL、Clinical Trials、PubMed（开关均为蓝色开启状态，并打有对勾）。
+底部区块：Custom >（自定义连接器，用于连接自己的本地服务器）。 [图]
+3. Specialists（专家面板）
+界面布局：
+顶部：下拉筛选 All (1)，搜索框，以及 + Add specialist。
+核心区块：Built-in >（内置角色）。目前列表中只有一个专家角色——Reviewer（审稿人），右侧配有一个切换开关（当前处于开启状态）。
+底层逻辑：开启后，AI 会切换到专家思维模式（例如用审稿人苛刻的视角审查你的论文）。
+[图]
+4. Memory（记忆面板）
+界面布局：
+右上角：全局总开关 Off（关闭状态）和 Clear all（一键清空）按钮。
+提示条：解释当前记忆关闭时，Claude不会主动记录新内容。
+左下侧边栏：About you（关于你的基础信息，目前为 0 条）和 + New category（新建分类）。
+右侧主区域：展示当前分类下的具体笔记内容，右上角有 + Add 按钮。
+[图]
+5. Compute（计算面板）
+界面布局：采用分块自上而下排列。
+SSH hosts：用于连接你自己的服务器或集群，右侧有 + Add SSH host 按钮（当前列表为空）。
+Cloud providers：用于连接云端 GPU 算力。目前显示了 Modal 云平台，右侧配有 Connect 连接按钮。
+Model endpoints：用于连接本地或远程的专业科学模型。目前显示 NVIDIA BioNeMo NIM，右侧配有 Connect 按钮。
+[图]
+6. Network（网络面板）
+界面布局：分为上下两大块。
+Package mirror（包镜像）：这是给机构/企业内部用户准备的。包含 Conda channel mirror 输入框、Python package index (pip) 输入框，以及企业 CA 证书路径输入，右侧配有 Check 和 Save 按钮。
+Claude Science domains（科研域名白名单）：底部是详细的分类开关。包含了 Package management（已开启）、NCBI / NIH（已开启）、Genomics & biology（关闭）、Proteomics（关闭）、Literature & citations（已开启）、Clinical & pharma（关闭）。
+底端：Allowed domains（允许的自定义域名白名单）和 + Add domain 按钮。
+[图]
+[图]
+第二部分：Workspace（工作区配置模块）
+7. Permissions（权限面板）
+界面布局：
+顶部：下拉筛选 All (12)。
+Registry writes（注册表/配置写入）区块：右侧配有 Revoke all（撤销所有）按钮。包含 Create agent, Update agent, Publish skill, Edit skill 等 8 项系统级权限。权限作用域目前均为 Global（全局）。
+Local compute（本地计算）区块：右侧配有 Revoke all 按钮。包含 python any call（全局调用 Python）以及 bash any call（全局调用 Bash命令）。其中调用 Bash 的权限被绑定到了 Project: demo 等具体项目上。
+[图]
+8. Credentials（凭据面板）
+界面布局：
+顶部：下拉筛选 All (8)，以及 + Add 按钮。
+Services（外部服务）区块：罗列了各大主流云服务和科研 API，每个右侧都有 Connect 按钮。支持绑定：AWS、GitHub、Google Cloud、Literature access（期刊访问）、Microsoft Azure、Modal、NVIDIA API、OpenAlex。
+Custom（自定义凭据）区块：用于自己添加其他未在列表中的服务，支持手动添加密钥。
+[图]
+9. Storage（存储面板）
+界面布局：
+Data location（数据路径）区块：显示你当前项目的本地文件存储路径。右侧有 Change location 按钮。（下方有提示：如果当前有活跃会话，不能修改路径）。
+Disk usage（磁盘用量）区块：带有绿色的进度条，下方细化了存储构成：包含 Artifacts (16.1 MB)、Conda environments (8.3 GB，占了最大头)、Workspace、Tool results 等。显示本地还有 870.9 GB 剩余空间。
+Cloud storage（云存储）区块：显示未配置云存储，并提示去凭据面板连接。
+[图]
+10. Usage（用量面板）
+界面布局：
+Plan limits（订阅额度）区块：顶部的状态显示，当前提示 Usage fetch failed (403)，包含 Retry 按钮。说明当前可能因为网络或认证问题无法拉取额度状态。
+Where tokens go（Token去向）环形图：右侧有 24h, 7 days, 30 days 时间筛选。图中展示了 Assistant prose（18%）、Tool calls（33%）、Artifact provenance（1.8%）、Reviewer（47%）。
+By session（按会话统计）列表：记录了最近 7 天的对话记录，包含模型类型（如 claude-haiku-4-5, claude-sonnet-5）、对话发生时间和单次会话中 Review 模式占用的百分比。
+[图]
+11. General（通用设置面板）
+界面布局：呈分栏配置形式。
+Account（账号）：显示当前账号（your@email.com），右侧有 Sign out 登出按钮，以及 Manage billing 管理账单链接。
+Organization（组织）：提供组织 ID 用于向官方反馈问题。
+Model（模型设置）：下拉菜单可选择 Default model（默认模型，当前设为 Haiku 4.5）、Reasoning effort（推理努力程度，当前设为 High）、Subagent model（子智能体模型）。
+Licensing（许可证声明）：单选框，用于声明你的使用意图。分为 Commercial use (default) 商业用途和 Non-commercial use 非商业用途（建议做科研学术的改为学术用途，以避免触发很多开源组件的商业授权报错）。
+Appearance（外观）：可设置 Response font（响应字体）和 Theme（主题配色）。
+Contact email（联系邮箱）：Not set 状态，右侧有 Set 按钮。填好邮箱后，AI 在代表你向 NCBI、EBI 等学术网站爬取数据时会自动带上你的身份邮箱。
+About（关于）：显示当前 Claude Science 的具体版本号，以及 Check for updates 检查更新按钮。
+[图]
+[图]

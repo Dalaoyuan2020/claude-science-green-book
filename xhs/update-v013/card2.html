@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1440px;overflow:hidden}
+body{font-family:"PingFang SC",sans-serif;background:#F2F7F3;color:#1B2620;padding:72px 56px;display:flex;flex-direction:column}
+.tag{display:inline-block;background:#215E41;color:#fff;font-weight:800;font-size:30px;padding:10px 26px;border-radius:100px;align-self:flex-start}
+h1{font-size:68px;font-weight:900;line-height:1.22;margin-top:28px;color:#1A4531}
+h1 .hl{color:#1E7A4C}
+.sub{font-size:33px;color:#5F7A6B;margin-top:18px;line-height:1.5;font-weight:500}
+.steps{margin-top:38px;display:flex;flex-direction:column;gap:22px}
+.step{background:#fff;border:2px solid #E1EAE3;border-radius:18px;padding:28px 30px;font-size:35px;font-weight:700;display:flex;align-items:center;gap:20px}
+.step .n{flex:none;width:52px;height:52px;border-radius:50%;background:#1E7A4C;color:#fff;font-size:30px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.step b{color:#1E7A4C}
+.promptbox{margin-top:36px;background:#12271B;border-radius:20px;padding:36px 38px;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.pb-head{display:flex;align-items:center;gap:14px;font-size:26px;font-weight:800;color:#8FD4AC;letter-spacing:2px}
+.pb-head .dot{width:16px;height:16px;border-radius:50%;background:#E9C63F}
+.pb-body{margin-top:20px;font-size:32px;line-height:1.7;color:#E4F2E8;font-weight:500}
+.pb-body b{color:#FFE07A}
+.pb-note{margin-top:22px;font-size:26px;color:#7FA98D;border-top:1px solid rgba(255,255,255,.14);padding-top:16px}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+.foot .tip{font-size:29px;color:#5F7A6B;font-weight:600}
+.foot .tip b{color:#1E7A4C}
+.sign{font-size:28px;color:#8AA394}
+</style></head><body>
+<span class="tag">② 安装 / 升级，一句话交给 AI</span>
+<h1>不用懂命令行，<span class="hl">丢给 AI 就行</span></h1>
+<div class="sub">首次安装和老版升级用同一段话，AI 自己体检、自己分流</div>
+<div class="steps">
+<div class="step"><span class="n">1</span><span>GitHub Releases 下载<b>完整 ZIP</b>（别只下 EXE）</span></div>
+<div class="step"><span class="n">2</span><span>解压到一个<b>新文件夹</b></span></div>
+<div class="step"><span class="n">3</span><span>用 AI 助手打开这个文件夹，发下面这段 👇</span></div>
+</div>
+<div class="promptbox">
+<div class="pb-head"><span class="dot"></span>PROMPT · 复制就能用</div>
+<div class="pb-body">请协助我在这台 Windows 电脑上安装或升级 CSA。当前文件夹是我刚解压的新版完整包。先读 README 和包内文档，<b>只做只读体检</b>，判断我是首次安装还是老版升级，把计划讲给我听；<b>经我确认后再动手</b>。升级要保留旧版可回退，<b>不动我已保存的 Key</b>。</div>
+<div class="pb-note">完整版 Prompt 就在包里：docs/prompts/ 文件夹，照着发更稳</div>
+</div>
+<div class="foot">
+<span class="tip">老用户升级：<b>不卸载、不重装、Key 不丢</b></span>
+<span class="sign">@河小驴</span>
+</div>
+</body></html>
