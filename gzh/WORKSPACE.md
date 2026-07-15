@@ -27,8 +27,12 @@
 ## 关键约定
 
 - **排版源**＝精华版（吕博定：公众号排精华版）；内容真理源在 `articles/`（原版）与 study-blog（精华版），排版不改内容
-- **排版技术**＝gzh-design-skill（github.com/isjiamu/gzh-design-skill 蒸馏），主题＝摸鱼绿（#059669，贴绿皮书品牌绿；教程类推荐主题）
+- **排版技术**＝gzh-design-skill（`github.com/isjiamu/gzh-design-skill`），主题＝摸鱼绿（#059669，贴绿皮书品牌绿；教程类推荐主题）
+  - **skill 装在 `.claude/skills/gzh-design/`，不进 git**（AGPL 与本仓库 CC BY-NC-SA 冲突）。重装方法见 `.claude/skills/BOOTSTRAP.md`
+  - **铁律：HTML 一律从 `references/theme-moyu-green.md` 组件库取，不许凭记忆手写，不许照上一期成品反推**（2026-07-15 Day 6 整篇返工过）
+  - 产物必跑 `scripts/validate_gzh_html.py`，**ERROR 和 WARNING 都清零**；预览页用 `scripts/wrap_preview.py` 生成
 - **平台红线**＝样式全内联、文字全 `<span leaf>` 包裹、禁 div/class/style 标签；校验脚本 0 ERROR 才算完成
+- **该 skill 的核心特色别漏**＝正文每段主动标 1–3 个关键词下划线（组件 6e）；锚点层（绿色加粗 6a／oneliner-card 9b）**全文 ≤ 5 处**；图片用 `max-width:100%` 不用 `width:100%`；目录必须跟正文章节逐条对应
 - **图片**＝引用 GitHub Pages 直链（https://dalaoyuan2020.github.io/study-blog/day02-*.png），公众号编辑器粘贴时会自动转存；若个别图转存失败，人工上传素材库替换
 - **手动兜底**＝浏览器打开 `_预览.html` → 点右上角「复制到公众号」→ 编辑器 ⌘+V 粘贴
 - **⚠️ 发布前人工三件套（2026-07-07 Day 2 教训：摘要/作者漏填了）**＝粘贴只解决正文，**摘要、作者、封面图**是编辑器侧边的独立字段，必须人工填。Napoleon 每次交付排版产物时，要在结尾显式提醒这三样，并把现成文案贴出来供复制

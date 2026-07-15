@@ -1,2 +1,7 @@
 production/dist/
 .DS_Store
+
+# 本地 skill（第三方，授权与本仓库 CC BY-NC-SA 冲突，不提交）
+# 重装方法见 .claude/skills/BOOTSTRAP.md
+.claude/skills/*/
+!.claude/skills/BOOTSTRAP.md
