@@ -54,3 +54,21 @@
 
 **README 挂工具**：中英文 README 封面下新增 CSA 配套工具入口（开源仓库 + Releases 下载）
 - 待办：Day 4 精华版→阅读室；Day 3/Day 4 公众号定时发；小红书 Day 4 三卡+共用主视觉；CSA Release（吕博传 zip）
+
+**封面重设计 v2（2026-07-16）**
+- 换掉旧封面：旧版印着 `TURING 图灵原创` 徽标与 `人民邮电出版社 / POSTS & TELECOM PRESS`。这两个都是真实机构，本书与其无任何关系，属冒名署名，必须去掉
+- 新封面署名改为诚实版本：`开源科研手册 OPEN RESEARCH HANDBOOK` / `CC BY-NC-SA 4.0` / `Winnie lyu 著` / GitHub 仓库地址
+- 视觉：深绿学术底 + 衬线中英混排 + 科研流水线示意（选题→文献→写作→审稿→投稿，含 REJECTED → DIAGNOSED → RESUBMITTED 回环，呼应 SR-DDPM 真实经历）
+- 章节块（四部·十二章）**暂时注释掉**：README v0.1 写「12 章 / 四部」，OUTLINE.md v0.2 已改「10 章 / 三部」，大纲归口未定，封面先不把结构印死。大纲定了把 `cover_generator.html` 里注释的那块放回并改对
+- 产物：`screenshots/cover.jpg`（1200×1600 投放件，文件名与尺寸不变，README 免改）
+- 源文件与高清件不进仓库，在 `~/Documents/Claude_Mini_agent/_greenbook_cover_handoff/`：
+  `cover_generator.html`（HTML 源，可改可重渲染）/ `cover_v2_2400x3200.png`（2x 高清）/ `cover_OLD_for_reference.jpg`（旧封面备份）
+- 重渲染命令（HANDOFF.md 交接时缺失，此处补记）：
+  ```bash
+  cd ~/Documents/Claude_Mini_agent/_greenbook_cover_handoff
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
+    --allow-file-access-from-files --force-device-scale-factor=2 \
+    --screenshot=cover_v2_2400x3200.png --window-size=1200,1600 --hide-scrollbars \
+    "file://$PWD/cover_generator.html"
+  # 再用 PIL 缩到 1200×1600 存 jpg(quality=92, subsampling=0) 覆盖 screenshots/cover.jpg
+  ```
