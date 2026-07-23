@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1024px;height:1280px;overflow:hidden}
+body{
+  background:linear-gradient(165deg,#2D7D5F 0%,#1A4D3A 100%);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  padding:52px 46px 46px;
+}
+.head{text-align:center;margin-bottom:32px}
+.pill{display:inline-block;font-size:22px;font-weight:800;color:#1A4D3A;background:#B9E9CF;border-radius:100px;padding:9px 26px;letter-spacing:2px}
+h1{font-family:"Yuanti SC","PingFang SC",sans-serif;font-size:58px;font-weight:900;color:#fff;margin:16px 0 8px;letter-spacing:1px;line-height:1.15}
+.sub{font-size:22px;color:#B9E9CF;font-weight:600}
+.card{background:#fff;border-radius:22px;padding:28px 28px 22px}
+.flow{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
+.step{display:flex;align-items:center;gap:14px;background:#FFFCF0;border:2px solid #FCD9A0;border-radius:14px;padding:14px 18px}
+.step .n{width:42px;height:42px;border-radius:12px;background:#1A4D3A;color:#fff;font-size:22px;font-weight:900;display:flex;align-items:center;justify-content:center;flex:none}
+.step .t{font-size:26px;font-weight:900;color:#1A4D3A;width:160px;flex:none}
+.step .d{font-size:18px;color:#4b5563;line-height:1.45;flex:1}
+.step .d b{color:#B45309}
+.split{display:flex;gap:14px;margin-bottom:20px}
+.col{flex:1;background:#F2F7F3;border-radius:15px;padding:18px 18px}
+.col .ct{font-size:20px;font-weight:900;color:#1A4D3A;margin-bottom:4px}
+.col .cs{font-size:14px;color:#9CA3AF;margin-bottom:10px;font-weight:600}
+.col .li{font-size:16px;color:#374151;line-height:1.9}
+.col .li i{font-style:normal;color:#9CA3AF}
+.bot{background:#1A4D3A;border-radius:15px;padding:18px 20px;text-align:center}
+.bot .bt{font-size:14px;color:#6EE7B7;font-weight:800;letter-spacing:3px;margin-bottom:7px}
+.bot .bb{font-size:22px;color:#fff;font-weight:800;line-height:1.5}
+.sign{margin-top:18px;text-align:center;font-size:18px;color:#B9E9CF;font-weight:700}
+</style>
+</head>
+<body>
+<div class="head">
+  <span class="pill">Claude Science 绿皮书 · 07</span>
+  <h1>科研五步法</h1>
+  <div class="sub">从问题定义到可信交付的完整流程</div>
+</div>
+
+<div class="card">
+  <div class="flow">
+    <div class="step">
+      <div class="n">1</div>
+      <div class="t">定义问题</div>
+      <div class="d">要优化什么指标？为什么是这个问题？本例中核心目标是<b>最大化恶性召回率</b>，宁可错杀不可漏诊。</div>
+    </div>
+    <div class="step">
+      <div class="n">2</div>
+      <div class="t">数据探索</div>
+      <div class="d">看分布、看相关性、看类别比例。先确认数据可靠，再决定喂给模型什么。</div>
+    </div>
+    <div class="step">
+      <div class="n">3</div>
+      <div class="t">建模实验</div>
+      <div class="d">对 Linear / RBF / Poly-3 / Sigmoid 四种核函数分别独立调优，用交叉验证选出最优解。</div>
+    </div>
+    <div class="step">
+      <div class="n">4</div>
+      <div class="t">结果解释</div>
+      <div class="d">不只看准确率，还要看混淆矩阵、ROC、特征重要性。让结果<b>说得通、信得过</b>。</div>
+    </div>
+    <div class="step">
+      <div class="n">5</div>
+      <div class="t">审查交付</div>
+      <div class="d">代码-图表-文字三线对齐，修 bug，输出报告、可复现代码和产品化 Prompt。</div>
+    </div>
+  </div>
+
+  <div class="split">
+    <div class="col">
+      <div class="ct">Claude Science</div>
+      <div class="cs">科研侧 · 验证核心算法</div>
+      <div class="li">
+        问题清晰 <i>知道优化什么</i><br>
+        过程可复现 <i>代码+参数+种子</i><br>
+        结果可审查 <i>代码图表文字对齐</i><br>
+        产出可交付 <i>报告+代码+Prompt</i>
+      </div>
+    </div>
+    <div class="col">
+      <div class="ct">Claude Code</div>
+      <div class="cs">工程侧 · building</div>
+      <div class="li">
+        写可维护代码 <i>API + UI</i><br>
+        搭产品架构 <i>数据库+服务</i><br>
+        部署上线 <i>测试+发布</i><br>
+        把科研成果工程化 <i>产品可用</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="bot">
+    <div class="bt">一句带走</div>
+    <div class="bb">科研不是跑个高分模型，而是用可复现、可审查的流程，确认你的结论站得住脚。</div>
+  </div>
+</div>
+
+<div class="sign">@河小驴 · 边做边写</div>
+</body>
+</html>
