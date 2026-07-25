@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;overflow:hidden;background:#F2F7F3}
+body{font-family:"PingFang SC",sans-serif}
+.wrap{padding:36px 44px;box-sizing:border-box}
+h1{margin:0 0 6px;font-size:30px;color:#215E41;font-family:"Songti SC",serif}
+.sub{margin:0 0 22px;font-size:16px;color:#75857B}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,0.06)}
+th,td{text-align:left;padding:11px 14px;font-size:17px;line-height:1.45}
+th{background:#215E41;color:#fff;font-weight:700;font-size:16px}
+td{color:#2B3A33;border-top:1px solid #E4EEE8}
+td.k{color:#0B7A4B;font-weight:700;white-space:nowrap}
+tr:nth-child(even) td{background:#F6FAF7}
+.src{margin-top:16px;text-align:right;font-size:14px;color:#75857B}
+</style></head><body><div class="wrap">
+<h1>一张表带走：想干什么，点哪里</h1>
+<p class="sub">Claude Science 绿皮书 08 · 界面与溯源 —— 界面操作速查</p>
+<table>
+<tr><th>你想干什么</th><th>点哪里</th><th>在哪一层</th><th>什么时候会用到</th></tr>
+<tr><td>看不懂一张图从哪来</td><td class="k">⋮ → Provenance</td><td>右 · 产物区</td><td>被问「这图怎么来的」时</td></tr>
+<tr><td>回到生成它的那句对话</td><td class="k">⋮ → View in context</td><td>右 · 产物区</td><td>要写实验过程时</td></tr>
+<tr><td>图改坏了想找上一版</td><td class="k">产物左上 · 版本号</td><td>右 · 产物区</td><td>改 prompt 重跑之后</td></tr>
+<tr><td>把图发给合作者</td><td class="k">⋮ → Copy link</td><td>右 · 产物区</td><td>组会前</td></tr>
+<tr><td>产物太多找不着</td><td class="k">⋮ → Star / Hide / Rename</td><td>右 · 产物区</td><td>图攒了一堆后</td></tr>
+<tr><td>结题、投稿要归档</td><td class="k">⋮ → Export Metadata</td><td>右 · 产物区</td><td>结题、备份时</td></tr>
+<tr><td>确认 AI 拆对了步骤</td><td class="k">Notebook → Messages</td><td>中 · Notebook 区</td><td>下完指令先瞄一眼</td></tr>
+<tr><td>想复现这个环境</td><td class="k">Notebook → Environment</td><td>中 · Notebook 区</td><td>换电脑、交数据前</td></tr>
+<tr><td>指着图问这块啥意思</td><td class="k">图上圈选 · annotate</td><td>中 · Notebook 区</td><td>看不懂某一块时</td></tr>
+<tr><td>往里送文件</td><td class="k">加号 → Attach files</td><td>底 · 输入区</td><td>实验开始前</td></tr>
+<tr><td>让审查员再过一遍</td><td class="k">加号 → Request review</td><td>底 · 输入区</td><td>拿不准结论时</td></tr>
+<tr><td>把这段流程存成技能</td><td class="k">加号 → Save as skill</td><td>底 · 输入区</td><td>想下次复用时</td></tr>
+</table>
+<p class="src">依据 Claude Science 界面实测整理 · 查证于 2026-07-25</p>
+</div></body></html>
