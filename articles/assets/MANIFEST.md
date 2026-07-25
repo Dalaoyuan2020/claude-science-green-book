@@ -9,6 +9,7 @@
 | d08-04 | articles/assets/day08/cs08-04-provenance.png | 08 | screenshot | 溯源键藏在产物旁这条 ⋮ 里 | 第四节 | ready |
 | d08-05 | articles/assets/day08/cs08-05-version-zoom.png | 08 | screenshot | 点版本号，能回到上一版 | 第六节 | ready |
 | d08-06 | articles/assets/day08/cs08-06-notebook-code.png | 08 | screenshot | 真代码连自动注入的 skill 都在这 | 第五节 | ready |
+| d08-07 | articles/assets/day08/cs08-07-review.png | 08 | screenshot | kernel 标错是审查员报出来的，不是我 | 第五节（改纯文字，不配图） | deprecated |
 | d08-08 | articles/assets/day08/cs08-08-annotate.png | 08 | screenshot | 能指着图说这块，而不是描述这块 | 第七节 | ready |
 | d08-09 | articles/assets/day08/cs08-09-plus-menu.png | 08 | screenshot | 你往里送东西的唯一入口 | 第八节 | ready |
 | d08-10 | articles/assets/day08/cs08-summary.png | 08 | summary | 一张表带走：想干什么，点哪里 | 收尾 | ready |
