@@ -12,7 +12,7 @@
 | d08-07 | articles/assets/day08/cs08-07-review.png | 08 | screenshot | kernel 标错是审查员报出来的，不是我 | 第五节（改纯文字，不配图） | deprecated |
 | d08-08 | articles/assets/day08/cs08-08-annotate.png | 08 | screenshot | 能指着图说这块，而不是描述这块 | 第七节 | ready |
 | d08-09 | articles/assets/day08/cs08-09-plus-menu.png | 08 | screenshot | 你往里送东西的唯一入口 | 第八节 | ready |
-| d08-10 | articles/assets/day08/cs08-summary.png | 08 | summary | 一张表带走：想干什么，点哪里 | 收尾（正文用图版，小红书层同用） | ready |
+| d08-10 | articles/assets/day08/cs08-summary.png | 08 | summary | 一张表带走：想干什么，点哪里 | 收尾（正文改用表版，图留小红书层） | ready |
 | d08-11 | articles/assets/day08/cs08-11-notebook-environment.png | 08 | screenshot | 环境标签：152 个包连版本号一起存着 | 第五节 | ready |
 | d08-12 | articles/assets/day08/cs08-07-execution-log.png | 08 | screenshot | 卡在哪一步、跑了多久看这里 | 第五节 | ready |
 | d08-13 | articles/assets/day08/cs08-10-notebook-messages.png | 08 | screenshot | 一句指令被拆成几步都在这 | 第五节 | ready |
