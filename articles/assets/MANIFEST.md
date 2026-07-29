@@ -24,4 +24,4 @@
 | d09-05 | articles/assets/day09/fig06_cnn_confusion.png | 09 | figure | CNN 混淆矩阵：漏报从 118 降到 34 | 第三节 | ready |
 | d09-06 | articles/assets/day09/fig09_advanced_transfer_comparison.png | 09 | figure | 四版对比：微调版站到了最高 | 第四节 | ready |
 | d09-07 | articles/assets/day09/fig10_efficientnet_finetuned_confusion.png | 09 | figure | 微调混淆矩阵：1,200 张里面对 1,158 | 第四节 | ready |
-| d09-08 | articles/assets/day09/fig08_model_comparison.png | 09 | figure | 两步跳跃：第一步抬得最多 | 第四节末（v3.4 从第五节移来，图注同步改） | ready |
+| d09-08 | articles/assets/day09/fig08_model_comparison.png | 09 | figure | 两步跳跃：SVM 到 CNN 跨度最大 | 第三节末（图内只有 SVM/CNN 两方，归位第三节，编号图 6） | ready |
