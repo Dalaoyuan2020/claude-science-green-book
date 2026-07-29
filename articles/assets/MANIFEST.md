@@ -16,3 +16,12 @@
 | d08-11 | articles/assets/day08/cs08-11-notebook-environment.png | 08 | screenshot | 环境标签：152 个包连版本号一起存着 | 第五节 | ready |
 | d08-12 | articles/assets/day08/cs08-07-execution-log.png | 08 | screenshot | 卡在哪一步、跑了多久看这里 | 第五节 | ready |
 | d08-13 | articles/assets/day08/cs08-10-notebook-messages.png | 08 | screenshot | 一句指令被拆成几步都在这 | 第五节 | ready |
+| d09-00 | articles/assets/day09/cs09-cover.png | 09 | cover | Claude Science 绿皮书 09 · 疟疾红细胞 | 封面 | ready |
+| d09-01 | articles/assets/day09/fig01_sample_cells.png | 09 | figure | 样本：细胞内部的染色斑点是证据 | 第一节 | ready |
+| d09-02 | articles/assets/day09/fig02_class_size_dist.png | 09 | figure | 尺寸：宽度中位 130 像素，大小悬殊 | 第一节 | ready |
+| d09-03 | articles/assets/day09/fig03_svm_confusion.png | 09 | figure | SVM 混淆矩阵：118 个感染被漏掉 | 第二节 | ready |
+| d09-04 | articles/assets/day09/fig05_cnn_training_curves.png | 09 | figure | 训练曲线：12 轮跑稳，没翻车 | 第三节 | ready |
+| d09-05 | articles/assets/day09/fig06_cnn_confusion.png | 09 | figure | CNN 混淆矩阵：漏报从 118 降到 34 | 第三节 | ready |
+| d09-06 | articles/assets/day09/fig09_advanced_transfer_comparison.png | 09 | figure | 四版对比：微调版站到了最高 | 第四节 | ready |
+| d09-07 | articles/assets/day09/fig10_efficientnet_finetuned_confusion.png | 09 | figure | 微调混淆矩阵：1,200 张里面对 1,158 | 第四节 | ready |
+| d09-08 | articles/assets/day09/fig08_model_comparison.png | 09 | figure | 两步跳跃：第一步抬得最多 | 第四节末（v3.4 从第五节移来，图注同步改） | ready |
