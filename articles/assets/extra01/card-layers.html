@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1000px;box-sizing:border-box;padding:46px 64px 30px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
+.sub{font-size:16px;color:#5b6b60;margin:0 0 34px}
+.layer{border-radius:14px;padding:22px 28px;background:#fff;border:1.5px solid #dbe7de;position:relative}
+.gap{height:30px}
+.tag{display:inline-block;font-size:14px;font-weight:700;color:#fff;background:#215E41;border-radius:6px;padding:3px 12px;margin-bottom:9px}
+.tag.grey{background:#9aa5a0}
+.lt{font-family:"Songti SC",serif;font-size:23px;font-weight:700;color:#215E41;margin:0 0 5px}
+.ld{font-size:16.5px;color:#3a463d;line-height:1.55}
+.lm{font-size:14.5px;color:#8a958c;margin-top:7px}
+.link{position:absolute;right:26px;top:24px;font-size:14.5px;color:#9aa5a0}
+/* 手层右侧：执行循环 + review 回环（一眼看懂，不像半张图） */
+.loopzone{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 16px;background:#F6FAF7;border:1px solid #dbe7de;border-radius:10px}
+.chain{display:flex;align-items:center;gap:7px;font-size:15px;color:#3a463d;font-weight:600;flex-wrap:wrap}
+.chain .st{background:#fff;border:1px solid #cfe0d4;border-radius:6px;padding:4px 10px}
+.chain .ar{color:#9aa5a0;font-weight:700}
+.reviewtag{display:flex;align-items:center;gap:8px;margin-left:auto}
+.reviewtag .cyc{font-size:34px;color:#215E41;font-weight:900;line-height:1}
+.reviewtag .rlbl{background:#E9C63F;color:#5a4a00;font-size:15px;font-weight:800;padding:6px 13px;border-radius:8px;white-space:nowrap}
+.foot{margin-top:30px;text-align:right;font-size:14.5px;color:#8a958c}
+</style></head><body>
+<div class="card">
+  <h1>脑、手、眼：三层分工</h1>
+  <p class="sub">贵的只动几次脑，便宜的放开手跑，眼睛另外借</p>
+
+  <!-- 脑 -->
+  <div class="layer">
+    <span class="tag grey">脑 · 顶级模型</span>
+    <div class="link">Claude / Opus 级</div>
+    <div class="lt">规划、架构权衡、任务拆解</div>
+    <div class="ld">次数少、单次价值高，贵但值。</div>
+    <div class="lm">一个月几百次</div>
+  </div>
+
+  <div class="gap"></div>
+
+  <!-- 手 -->
+  <div class="layer">
+    <span class="tag">手 · V4 Flash</span>
+    <div class="link">编译器 · 测试</div>
+    <div class="lt">写、改、跑、修</div>
+    <div class="ld">一天几万次调用，全交给它。读代码库、看报错、改代码、再验证。</div>
+    <div class="lm">70M tokens / ¥8.48 · 连跑一整夜</div>
+    <div class="loopzone">
+      <div class="chain">
+        <span class="st">执行</span><span class="ar">→</span>
+        <span class="st">报错</span><span class="ar">→</span>
+        <span class="st">读报错</span><span class="ar">→</span>
+        <span class="st">改</span><span class="ar">→</span>
+        <span class="st">再执行</span>
+      </div>
+      <div class="reviewtag"><span class="cyc">⟳</span><span class="rlbl">review 闭环</span></div>
+    </div>
+  </div>
+
+  <div class="gap"></div>
+
+  <!-- 眼 -->
+  <div class="layer">
+    <span class="tag grey">眼 · 外接视觉模型 / Skill</span>
+    <div class="link">截图 → 判读 → 回灌</div>
+    <div class="lt">验收视觉产物</div>
+    <div class="ld">它没有眼睛，截图丢给会看的模型判好坏、再回灌给它。</div>
+    <div class="lm">补上手的短板</div>
+  </div>
+
+  <div class="foot">据本篇工作流整理 · 2026-08-01</div>
+</div>
+</body></html>

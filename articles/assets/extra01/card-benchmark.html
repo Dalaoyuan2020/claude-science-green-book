@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1000px;box-sizing:border-box;padding:44px 52px 26px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
+.sub{font-size:16px;color:#5b6b60;margin:0 0 22px}
+.cols{display:flex;gap:48px}
+.col{flex:1;min-width:0}
+.ct{font-size:18px;font-weight:700;color:#215E41;margin:0 0 16px;font-family:"Songti SC",serif}
+.ct .ax{font-size:13px;color:#8a958c;font-weight:400;font-family:"PingFang SC",sans-serif}
+.grp{font-size:15px;font-weight:700;color:#3a463d;margin:0 0 8px;font-family:"Songti SC",serif}
+.row{display:flex;align-items:center;margin-bottom:7px}
+.mname{width:44px;flex:none;font-size:12.5px;color:#7b867e;text-align:right;padding-right:8px;box-sizing:border-box;font-weight:600}
+.track{flex:1;background:#e4ede6;border-radius:5px;height:20px;position:relative}
+.bar{height:20px;border-radius:5px}
+.v4{background:#215E41}.g2{background:#9aa5a0}.g3{background:#c9d2cb}
+.num{width:52px;flex:none;font-size:14px;font-weight:700;padding-left:9px;box-sizing:border-box;white-space:nowrap}
+.n1{color:#215E41}.n2{color:#8a958c}.n3{color:#aab4ac}
+.legend{display:flex;gap:18px;margin:4px 0 20px;font-size:13.5px;color:#5b6b60}
+.dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:middle}
+.foot{margin-top:26px;text-align:right;font-size:14px;color:#8a958c;line-height:1.5}
+</style></head><body>
+<div class="card">
+  <h1>分数与价格不在一个量级</h1>
+  <p class="sub">同一套 Agent 评测 · 同一批模型的输出牌价</p>
+
+  <div class="legend">
+    <span><span class="dot" style="background:#215E41"></span>V4 Flash</span>
+    <span><span class="dot" style="background:#9aa5a0"></span>GLM 5.2</span>
+    <span><span class="dot" style="background:#c9d2cb"></span>Opus 4.8</span>
+  </div>
+
+  <div class="cols">
+    <!-- 左：分数，线性 -->
+    <div class="col">
+      <p class="ct">四项分数 <span class="ax">0–100 线性</span></p>
+
+      <p class="grp">Terminal Bench 2.1</p>
+      <div class="row"><div class="mname">V4</div><div class="track"><div class="bar v4" style="width:82.7%"></div></div><div class="num n1">82.7</div></div>
+      <div class="row"><div class="mname">GLM</div><div class="track"><div class="bar g2" style="width:81%"></div></div><div class="num n2">81.0</div></div>
+      <div class="row"><div class="mname">Opus</div><div class="track"><div class="bar g3" style="width:85%"></div></div><div class="num n3">85.0</div></div>
+
+      <p class="grp" style="margin-top:18px">Toolathlon</p>
+      <div class="row"><div class="mname">V4</div><div class="track"><div class="bar v4" style="width:70.3%"></div></div><div class="num n1">70.3</div></div>
+      <div class="row"><div class="mname">GLM</div><div class="track"><div class="bar g2" style="width:59.9%"></div></div><div class="num n2">59.9</div></div>
+      <div class="row"><div class="mname">Opus</div><div class="track"><div class="bar g3" style="width:76.2%"></div></div><div class="num n3">76.2</div></div>
+
+      <p class="grp" style="margin-top:18px">DSBench-FullStack</p>
+      <div class="row"><div class="mname">V4</div><div class="track"><div class="bar v4" style="width:68.7%"></div></div><div class="num n1">68.7</div></div>
+      <div class="row"><div class="mname">GLM</div><div class="track"><div class="bar g2" style="width:61.8%"></div></div><div class="num n2">61.8</div></div>
+      <div class="row"><div class="mname">Opus</div><div class="track"><div class="bar g3" style="width:71.6%"></div></div><div class="num n3">71.6</div></div>
+
+      <p class="grp" style="margin-top:18px">DeepSWE</p>
+      <div class="row"><div class="mname">V4</div><div class="track"><div class="bar v4" style="width:54.4%"></div></div><div class="num n1">54.4</div></div>
+      <div class="row"><div class="mname">GLM</div><div class="track"><div class="bar g2" style="width:46.2%"></div></div><div class="num n2">46.2</div></div>
+      <div class="row"><div class="mname">Opus</div><div class="track"><div class="bar g3" style="width:58%"></div></div><div class="num n3">58.0</div></div>
+    </div>
+
+    <!-- 右：价格，对数 -->
+    <div class="col">
+      <p class="ct">每 1M 输出价 <span class="ax">对数刻度</span></p>
+
+      <p class="grp">输出价</p>
+      <div class="row"><div class="mname">V4</div><div class="track"><div class="bar v4" style="width:55.1%"></div></div><div class="num n1">$0.28</div></div>
+      <div class="row"><div class="mname">Sol</div><div class="track"><div class="bar g2" style="width:88.5%"></div></div><div class="num n2">$30</div></div>
+      <div class="row"><div class="mname">Fable</div><div class="track"><div class="bar g3" style="width:100%"></div></div><div class="num n3">$50</div></div>
+
+      <p class="grp" style="margin-top:18px">V4 Flash 缓存命中价</p>
+      <div class="row"><div class="mname">V4</div><div class="track"><div class="bar v4" style="width:6.1%;opacity:.55"></div></div><div class="num n1">$0.0028</div></div>
+
+      <p style="font-size:14px;color:#5b6b60;line-height:1.75;margin:36px 0 0;padding-top:14px;border-top:1px solid #dde7df">
+        左边四项它都在第二梯队，<br>离第一最近只差 2.9 分；<br>右边它的价格几乎贴着零线。
+      </p>
+    </div>
+  </div>
+
+  <div class="foot">DeepSeek 官方自报（自研 harness）· 2026-07-31<br>DSBench 为 DeepSeek 内部测试集</div>
+</div>
+</body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1000px;box-sizing:border-box;padding:44px 56px 30px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 6px}
+.sub{font-size:17px;color:#5b6b60;margin:0 0 30px}
+.row{display:flex;align-items:center;margin-bottom:26px}
+.name{width:250px;font-size:19px;color:#263326;text-align:right;padding-right:20px;box-sizing:border-box;font-weight:600}
+.track{width:56%;flex:none;background:#e4ede6;border-radius:6px;height:34px;position:relative}
+.bar{height:34px;border-radius:6px}
+.grey{background:#9aa5a0}
+.green{background:#215E41}
+.val{position:absolute;left:100%;top:50%;transform:translate(10px,-50%);font-size:19px;font-weight:700;white-space:nowrap}
+.grey+.val{color:#5b6b60}
+.green+.val{color:#215E41}
+.foot{margin-top:8px;text-align:right;font-size:15px;color:#8a958c}
+.note{font-size:15px;color:#8a958c;margin:18px 0 0}
+</style></head><body>
+<div class="card">
+  <h1>三条价格线</h1>
+  <p class="sub">每 1M 输出 token 的官方牌价 · 对数刻度</p>
+
+  <div class="row">
+    <div class="name">Fable 5</div>
+    <div class="track"><div class="bar grey" style="width:100%"></div><div class="val" style="color:#5b6b60">$50</div></div>
+  </div>
+  <div class="row">
+    <div class="name">Sol</div>
+    <div class="track"><div class="bar grey" style="width:88.5%"></div><div class="val" style="color:#5b6b60">$30</div></div>
+  </div>
+  <div class="row">
+    <div class="name">V4 Flash</div>
+    <div class="track"><div class="bar green" style="width:55.1%"></div><div class="val" style="color:#215E41">$0.28</div></div>
+  </div>
+  <div class="row">
+    <div class="name">V4 Flash 缓存命中</div>
+    <div class="track"><div class="bar green" style="width:6.1%"></div><div class="val" style="color:#215E41">$0.0028</div></div>
+  </div>
+
+  <p class="note">注：对数刻度，每向左一格便宜一个量级；最后一根几乎贴到零线。</p>
+  <div class="foot">官方 API 定价 · 2026-07-31</div>
+</div>
+</body></html>
