@@ -26,6 +26,7 @@
 | d09-07 | articles/assets/day09/fig10_efficientnet_finetuned_confusion.png | 09 | figure | 微调混淆矩阵：1,200 张里面对 1,158 | 第四节 | ready |
 | d09-08 | articles/assets/day09/fig08_model_comparison.png | 09 | figure | 两步跳跃：SVM 到 CNN 跨度最大 | 第三节末（图内只有 SVM/CNN 两方，归位第三节，编号图 6） | ready |
 | d10-00 | articles/assets/day10/cs10-cover.png | 10 | cover | Claude Science 绿皮书 10 · 写成一篇论文 | 封面 | ready |
-| d10-01 | articles/assets/day10/fig01-seven-parts.png | 10 | figure | 论文的七个部分：每一格都能从实验里直接抬 | 第二节 | ready |
+| d10-01 | articles/assets/day10/fig01-seven-parts.png | 10 | figure | 论文的七个部分：三格从实验里搬，四格要自己生 | 第二节 | ready |
 | d10-02 | articles/assets/day10/fig02-writing-order.png | 10 | figure | 写作顺序：从结果与讨论起笔，摘要留到最后 | 第三节 | ready |
-| d10-03 | articles/assets/day10/fig03-bytes-line.png | 10 | figure | 六版字数变化：两次下降都发生在内容变清楚之后 | 第四节末 | ready |
+| d10-03 | articles/assets/day10/fig03-bytes-line.png | 10 | figure | 六个版本的三维评分：字数在掉的那两轮，分数都在涨 | 第四节末 | ready |
+| d10-04 | articles/assets/day10/fig04-one-look.png | 10 | figure | 一张图看完：实验报告和论文差在哪、按什么顺序写、到什么程度算写完 | 结尾一图流 | ready |

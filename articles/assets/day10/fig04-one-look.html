@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1000px;box-sizing:border-box;padding:44px 52px 28px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
+.sub{font-size:16px;color:#5b6b60;margin:0 0 26px}
+.row3{display:flex;gap:20px}
+.pane{flex:1;min-width:0;background:#fff;border:1.5px solid #dbe7de;border-radius:12px;padding:18px 18px 16px}
+.pane .ph{font-size:16.5px;font-weight:700;color:#215E41;font-family:"Songti SC",serif;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #e6f0ea}
+/* pane1 搬/生 */
+.mini{display:flex;align-items:center;margin-bottom:8px;font-size:13.5px}
+.mini .dot{flex:none;width:9px;height:9px;border-radius:50%;margin-right:8px}
+.banc{background:#215E41}.shc{background:#E9C63F}
+.mini .t{color:#263326;font-weight:600}
+/* pane2 顺序 */
+.seq{display:flex;flex-direction:column;gap:5px}
+.seq .s{background:#F6FAF7;border:1px solid #dbe7de;border-radius:7px;padding:6px 10px;font-size:13.5px;color:#263326;font-weight:600}
+.seq .a{color:#9aa5a0;font-size:13px;text-align:center;line-height:1}
+/* pane3 三维 */
+.dim{margin-bottom:12px}
+.dim .dl{font-size:13.5px;font-weight:700;color:#263326;margin-bottom:5px}
+.bar5{display:flex;gap:3px}
+.bar5 i{flex:1;height:12px;border-radius:3px;background:#e4ede6}
+.bar5 i.on{background:#215E41}
+.bar5 i.on4{background:#B37400}
+.dim .sc{font-size:12.5px;color:#8a958c;margin-top:4px}
+.foot{margin-top:22px;text-align:right;font-size:14.5px;color:#8a958c}
+</style></head><body>
+<div class="card">
+  <h1>一张图看完</h1>
+  <p class="sub">实验报告和论文差在哪 · 按什么顺序写 · 到什么程度算写完</p>
+
+  <div class="row3">
+    <!-- ① 七个部分分两类 -->
+    <div class="pane">
+      <p class="ph">① 七个部分，分两类</p>
+      <div class="mini"><span class="dot banc"></span><span class="t">搬：结果与讨论</span></div>
+      <div class="mini"><span class="dot banc"></span><span class="t">搬：材料与方法</span></div>
+      <div class="mini"><span class="dot banc"></span><span class="t">搬：参考文献</span></div>
+      <div class="mini" style="margin-top:12px"><span class="dot shc"></span><span class="t">生：引言</span></div>
+      <div class="mini"><span class="dot shc"></span><span class="t">生：结论</span></div>
+      <div class="mini"><span class="dot shc"></span><span class="t">生：摘要</span></div>
+      <div class="mini"><span class="dot shc"></span><span class="t">生：标题</span></div>
+    </div>
+
+    <!-- ② 写作顺序六步 -->
+    <div class="pane">
+      <p class="ph">② 写作顺序（倒着写）</p>
+      <div class="seq">
+        <div class="s">1 结果与讨论</div><div class="a">↓</div>
+        <div class="s">2 材料与方法</div><div class="a">↓</div>
+        <div class="s">3 结论</div><div class="a">↓</div>
+        <div class="s">4 引言</div><div class="a">↓</div>
+        <div class="s">5 摘要与标题</div><div class="a">↓</div>
+        <div class="s">6 参考文献</div>
+      </div>
+    </div>
+
+    <!-- ③ 三维验收 -->
+    <div class="pane">
+      <p class="ph">③ 三维验收（满分 5）</p>
+      <div class="dim">
+        <div class="dl">完成度</div>
+        <div class="bar5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <div class="sc">5 分 · 七部分齐、数字自洽</div>
+      </div>
+      <div class="dim">
+        <div class="dl">深度</div>
+        <div class="bar5"><i class="on4"></i><i class="on4"></i><i class="on4"></i><i class="on4"></i><i></i></div>
+        <div class="sc">4 分 · 差一分，不硬凑</div>
+      </div>
+      <div class="dim">
+        <div class="dl">可复现</div>
+        <div class="bar5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+        <div class="sc">5 分 · 别人能独立重跑</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">据本篇内容整理 · 2026-08-03</div>
+</div>
+</body></html>

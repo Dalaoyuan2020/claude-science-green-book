@@ -1,25 +1,46 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><style>
 html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
-.card{width:1000px;box-sizing:border-box;padding:44px 56px 28px;background:#F2F7F3}
+.card{width:1000px;box-sizing:border-box;padding:44px 52px 26px;background:#F2F7F3}
 h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
 .sub{font-size:16px;color:#5b6b60;margin:0 0 26px}
-.row{display:flex;align-items:stretch;margin-bottom:12px}
-.part{width:170px;flex:none;background:#215E41;color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:700;font-family:"Songti SC",serif;padding:14px 10px;box-sizing:border-box;text-align:center;line-height:1.3}
-.arrow{width:34px;flex:none;display:flex;align-items:center;justify-content:center;color:#9aa5a0;font-size:20px;font-weight:700}
-.lift{flex:1;background:#fff;border:1.5px solid #dbe7de;border-radius:10px;display:flex;align-items:center;padding:12px 18px;box-sizing:border-box;font-size:16px;color:#3a463d;line-height:1.4}
-.foot{margin-top:22px;text-align:right;font-size:14.5px;color:#8a958c}
+.cols{display:flex;gap:0;position:relative}
+.divider{width:2px;background:#cfe0d4;margin:0 30px;border-radius:2px}
+.col{flex:1;min-width:0}
+.ct{font-size:18px;font-weight:700;margin:0 0 6px;font-family:"Songti SC",serif}
+.ct.ban{color:#215E41}
+.ct.sheng{color:#B37400}
+.csub{font-size:14px;color:#8a958c;margin:0 0 16px}
+.cell{background:#fff;border:1.5px solid #dbe7de;border-radius:10px;padding:13px 16px;margin-bottom:11px}
+.cell .nm{font-size:17px;font-weight:700;color:#263326;font-family:"Songti SC",serif;margin-bottom:3px}
+.cell .ds{font-size:14px;color:#5b6b60;line-height:1.45}
+.ban .cell{border-left:4px solid #215E41}
+.sheng .cell{border-left:4px solid #E9C63F}
+.foot{margin-top:20px;text-align:right;font-size:14.5px;color:#8a958c}
 </style></head><body>
 <div class="card">
   <h1>论文的七个部分</h1>
-  <p class="sub">每一格右边，写它从实验里的什么东西直接抬过来</p>
+  <p class="sub">三格从实验里搬，四格要自己生</p>
 
-  <div class="row"><div class="part">标题</div><div class="arrow">→</div><div class="lift">四步常规优化，召回率从 84% 到 96%</div></div>
-  <div class="row"><div class="part">摘要</div><div class="arrow">→</div><div class="lift">27,558 张样本，四种配置同一份划分，最好一版 96.50%</div></div>
-  <div class="row"><div class="part">引言</div><div class="arrow">→</div><div class="lift">人工筛查慢且易漏；漏报的代价高于误报</div></div>
-  <div class="row"><div class="part">材料与方法</div><div class="arrow">→</div><div class="lift">NIH 公开 27,558 张两类对半；63 维手工特征 / 三层小 CNN / 冻结 / 解冻微调</div></div>
-  <div class="row"><div class="part">结果与讨论</div><div class="arrow">→</div><div class="lift">五行指标表、三张混淆矩阵；冻结版为何输给自搭小网，阈值为何下调</div></div>
-  <div class="row"><div class="part">结论</div><div class="arrow">→</div><div class="lift">四步路径可行；只测了平衡子集，未换医院与显微镜</div></div>
-  <div class="row"><div class="part">参考文献</div><div class="arrow">→</div><div class="lift">七条，全部经 Crossref 核对</div></div>
+  <div class="cols">
+    <div class="col ban">
+      <p class="ct ban">能直接搬的三格</p>
+      <p class="csub">实验数据里现成</p>
+      <div class="cell"><div class="nm">结果与讨论</div><div class="ds">五行指标表、三张混淆矩阵，程序跑完就在硬盘里</div></div>
+      <div class="cell"><div class="nm">材料与方法</div><div class="ds">划分 json 和四组配置参数，实验时逐条记着的</div></div>
+      <div class="cell"><div class="nm">参考文献</div><div class="ds">正文引到哪补到哪，最后统一核对格式</div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="col sheng">
+      <p class="ct sheng">要自己生出来的四格</p>
+      <p class="csub">数据里长不出来，得等前三格落定</p>
+      <div class="cell"><div class="nm">引言</div><div class="ds">读文献，把自己这篇放回同行的坐标里</div></div>
+      <div class="cell"><div class="nm">结论</div><div class="ds">对着结果下判断，主动划出没验证的范围</div></div>
+      <div class="cell"><div class="nm">摘要</div><div class="ds">全文写完之后压缩，压不出来说明正文没写透</div></div>
+      <div class="cell"><div class="nm">标题</div><div class="ds">最后一步才定，是对全文的一句话总结</div></div>
+    </div>
+  </div>
 
   <div class="foot">据本篇实验素材整理 · 2026-08-03</div>
 </div>
