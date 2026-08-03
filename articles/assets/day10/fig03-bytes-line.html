@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1000px;box-sizing:border-box;padding:44px 52px 26px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
+.sub{font-size:16px;color:#5b6b60;margin:0 0 20px}
+svg{display:block}
+.xl{font-size:15px;fill:#5b6b60;font-family:"PingFang SC",sans-serif}
+.vl{font-size:15px;fill:#263326;font-weight:700;font-family:"PingFang SC",sans-serif}
+.dip{font-size:14px;fill:#B37400;font-weight:700;font-family:"PingFang SC",sans-serif}
+.dipbox{fill:#FDF6E7;stroke:#E9C63F;stroke-width:1.2}
+.foot{margin-top:16px;text-align:right;font-size:14.5px;color:#8a958c;font-family:"PingFang SC",sans-serif}
+</style></head><body>
+<div class="card">
+  <h1>六版字数变化</h1>
+  <p class="sub">两次下降，都发生在内容变清楚之后</p>
+
+  <svg width="896" height="420" viewBox="0 0 896 420">
+    <!-- 网格线 -->
+    <line x1="70" y1="330" x2="860" y2="330" stroke="#dbe7de" stroke-width="1.5"/>
+    <line x1="70" y1="255" x2="860" y2="255" stroke="#eef4ef" stroke-width="1"/>
+    <line x1="70" y1="180" x2="860" y2="180" stroke="#eef4ef" stroke-width="1"/>
+    <line x1="70" y1="105" x2="860" y2="105" stroke="#eef4ef" stroke-width="1"/>
+
+    <!-- 折线（点见下，y 越小字越多） -->
+    <polyline fill="none" stroke="#215E41" stroke-width="3" stroke-linejoin="round"
+      points="110,330 260,225 410,150 560,155 710,55 860,105"/>
+
+    <!-- 数据点 + 数值 -->
+    <g>
+      <circle cx="110" cy="330" r="6" fill="#215E41"/><text class="vl" x="110" y="354" text-anchor="middle">13,674</text>
+      <circle cx="260" cy="225" r="6" fill="#215E41"/><text class="vl" x="252" y="216" text-anchor="end">15,578</text>
+      <circle cx="410" cy="150" r="6" fill="#215E41"/><text class="vl" x="402" y="141" text-anchor="end">16,902</text>
+      <circle cx="560" cy="155" r="6" fill="#B37400"/><text class="vl" x="560" y="179" text-anchor="middle">16,857</text>
+      <circle cx="710" cy="55"  r="6" fill="#215E41"/><text class="vl" x="710" y="42"  text-anchor="middle">18,312</text>
+      <circle cx="860" cy="105" r="6" fill="#B37400"/><text class="vl" x="852" y="131" text-anchor="end">17,987</text>
+    </g>
+
+    <!-- x 轴轮次 -->
+    <text class="xl" x="110" y="392" text-anchor="middle">第 1 版</text>
+    <text class="xl" x="260" y="392" text-anchor="middle">第 2 版</text>
+    <text class="xl" x="410" y="392" text-anchor="middle">第 3 版</text>
+    <text class="xl" x="560" y="392" text-anchor="middle">第 4 版</text>
+    <text class="xl" x="710" y="392" text-anchor="middle">第 5 版</text>
+    <text class="xl" x="860" y="392" text-anchor="middle">第 6 版</text>
+
+    <!-- 两次下降标注：写「内容变清楚之后」，不写「精简」 -->
+    <g>
+      <rect class="dipbox" x="468" y="200" rx="7" width="184" height="40"/>
+      <text class="dip" x="560" y="225" text-anchor="middle">−45 · 内容变清楚之后</text>
+      <rect class="dipbox" x="618" y="150" rx="7" width="204" height="40"/>
+      <text class="dip" x="720" y="175" text-anchor="middle">−325 · 内容变清楚之后</text>
+    </g>
+  </svg>
+
+  <div class="foot">六版字节数，据私库 CHANGELOG 整理 · 2026-08-03</div>
+</div>
+</body></html>

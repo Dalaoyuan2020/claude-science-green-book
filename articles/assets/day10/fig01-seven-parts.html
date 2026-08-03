@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1000px;box-sizing:border-box;padding:44px 56px 28px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
+.sub{font-size:16px;color:#5b6b60;margin:0 0 26px}
+.row{display:flex;align-items:stretch;margin-bottom:12px}
+.part{width:170px;flex:none;background:#215E41;color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:700;font-family:"Songti SC",serif;padding:14px 10px;box-sizing:border-box;text-align:center;line-height:1.3}
+.arrow{width:34px;flex:none;display:flex;align-items:center;justify-content:center;color:#9aa5a0;font-size:20px;font-weight:700}
+.lift{flex:1;background:#fff;border:1.5px solid #dbe7de;border-radius:10px;display:flex;align-items:center;padding:12px 18px;box-sizing:border-box;font-size:16px;color:#3a463d;line-height:1.4}
+.foot{margin-top:22px;text-align:right;font-size:14.5px;color:#8a958c}
+</style></head><body>
+<div class="card">
+  <h1>论文的七个部分</h1>
+  <p class="sub">每一格右边，写它从实验里的什么东西直接抬过来</p>
+
+  <div class="row"><div class="part">标题</div><div class="arrow">→</div><div class="lift">四步常规优化，召回率从 84% 到 96%</div></div>
+  <div class="row"><div class="part">摘要</div><div class="arrow">→</div><div class="lift">27,558 张样本，四种配置同一份划分，最好一版 96.50%</div></div>
+  <div class="row"><div class="part">引言</div><div class="arrow">→</div><div class="lift">人工筛查慢且易漏；漏报的代价高于误报</div></div>
+  <div class="row"><div class="part">材料与方法</div><div class="arrow">→</div><div class="lift">NIH 公开 27,558 张两类对半；63 维手工特征 / 三层小 CNN / 冻结 / 解冻微调</div></div>
+  <div class="row"><div class="part">结果与讨论</div><div class="arrow">→</div><div class="lift">五行指标表、三张混淆矩阵；冻结版为何输给自搭小网，阈值为何下调</div></div>
+  <div class="row"><div class="part">结论</div><div class="arrow">→</div><div class="lift">四步路径可行；只测了平衡子集，未换医院与显微镜</div></div>
+  <div class="row"><div class="part">参考文献</div><div class="arrow">→</div><div class="lift">七条，全部经 Crossref 核对</div></div>
+
+  <div class="foot">据本篇实验素材整理 · 2026-08-03</div>
+</div>
+</body></html>
