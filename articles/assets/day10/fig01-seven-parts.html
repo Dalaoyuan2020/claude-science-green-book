@@ -3,42 +3,42 @@ html,body{margin:0;width:1000px;background:#F2F7F3;font-family:"PingFang SC",san
 .card{width:1000px;box-sizing:border-box;padding:44px 52px 26px;background:#F2F7F3}
 h1{font-family:"Songti SC",serif;font-size:30px;font-weight:700;color:#215E41;margin:0 0 4px}
 .sub{font-size:16px;color:#5b6b60;margin:0 0 26px}
-.cols{display:flex;gap:0;position:relative}
-.divider{width:2px;background:#cfe0d4;margin:0 30px;border-radius:2px}
+.cols{display:flex;gap:18px}
 .col{flex:1;min-width:0}
-.ct{font-size:18px;font-weight:700;margin:0 0 6px;font-family:"Songti SC",serif}
-.ct.ban{color:#215E41}
-.ct.sheng{color:#B37400}
-.csub{font-size:14px;color:#8a958c;margin:0 0 16px}
-.cell{background:#fff;border:1.5px solid #dbe7de;border-radius:10px;padding:13px 16px;margin-bottom:11px}
-.cell .nm{font-size:17px;font-weight:700;color:#263326;font-family:"Songti SC",serif;margin-bottom:3px}
-.cell .ds{font-size:14px;color:#5b6b60;line-height:1.45}
-.ban .cell{border-left:4px solid #215E41}
-.sheng .cell{border-left:4px solid #E9C63F}
+.ct{font-size:17.5px;font-weight:700;margin:0 0 4px;font-family:"Songti SC",serif}
+.ct.a{color:#215E41}.ct.b{color:#B37400}.ct.c{color:#8a6d3b}
+.csub{font-size:13.5px;color:#8a958c;margin:0 0 15px}
+.cell{background:#fff;border:1.5px solid #dbe7de;border-radius:10px;padding:12px 15px;margin-bottom:11px}
+.cell .nm{font-size:16px;font-weight:700;color:#263326;font-family:"Songti SC",serif;margin-bottom:3px}
+.cell .ds{font-size:13.5px;color:#5b6b60;line-height:1.45}
+.a .cell{border-left:4px solid #215E41}
+.b .cell{border-left:4px solid #E9C63F}
+.c .cell{border-left:4px solid #cbb26a;background:#FDFAF2}
 .foot{margin-top:20px;text-align:right;font-size:14.5px;color:#8a958c}
 </style></head><body>
 <div class="card">
-  <h1>论文的七个部分</h1>
-  <p class="sub">三格从实验里搬，四格要自己生</p>
+  <h1>七个部分，对照实验报告</h1>
+  <p class="sub">实验报告里有没有现成的，分三档</p>
 
   <div class="cols">
-    <div class="col ban">
-      <p class="ct ban">能直接搬的三格</p>
-      <p class="csub">实验数据里现成</p>
-      <div class="cell"><div class="nm">结果与讨论</div><div class="ds">五行指标表、三张混淆矩阵，程序跑完就在硬盘里</div></div>
-      <div class="cell"><div class="nm">材料与方法</div><div class="ds">划分 json 和四组配置参数，实验时逐条记着的</div></div>
-      <div class="cell"><div class="nm">参考文献</div><div class="ds">正文引到哪补到哪，最后统一核对格式</div></div>
+    <div class="col a">
+      <p class="ct a">一格 · 要整理</p>
+      <p class="csub">报告里有，收拢成条就行</p>
+      <div class="cell"><div class="nm">材料与方法</div><div class="ds">划分 json、参数配置实验时就记下了，从日志里挑出来收成条</div></div>
     </div>
-
-    <div class="divider"></div>
-
-    <div class="col sheng">
-      <p class="ct sheng">要自己生出来的四格</p>
-      <p class="csub">数据里长不出来，得等前三格落定</p>
-      <div class="cell"><div class="nm">引言</div><div class="ds">读文献，把自己这篇放回同行的坐标里</div></div>
-      <div class="cell"><div class="nm">结论</div><div class="ds">对着结果下判断，主动划出没验证的范围</div></div>
-      <div class="cell"><div class="nm">摘要</div><div class="ds">全文写完之后压缩，压不出来说明正文没写透</div></div>
-      <div class="cell"><div class="nm">标题</div><div class="ds">最后一步才定，是对全文的一句话总结</div></div>
+    <div class="col b">
+      <p class="ct b">两格 · 要转化</p>
+      <p class="csub">数都在，但得换目标重排</p>
+      <div class="cell"><div class="nm">结果与讨论</div><div class="ds">数现成，按这一篇要讲的重点重新排过</div></div>
+      <div class="cell"><div class="nm">结论</div><div class="ds">报告结尾那两句是记录，换成站得住的判断</div></div>
+    </div>
+    <div class="col c">
+      <p class="ct c">四格 · 得手搓</p>
+      <p class="csub">报告里根本没有，从零写</p>
+      <div class="cell"><div class="nm">标题</div><div class="ds">报告只有个文件名，全文定下来才总结得出</div></div>
+      <div class="cell"><div class="nm">摘要</div><div class="ds">报告给自己人看，不需要这个东西</div></div>
+      <div class="cell"><div class="nm">引言</div><div class="ds">实验里长不出来，得去读文献才写得出来</div></div>
+      <div class="cell"><div class="nm">参考文献</div><div class="ds">报告里不引文献，要从头查、从头建</div></div>
     </div>
   </div>
 
