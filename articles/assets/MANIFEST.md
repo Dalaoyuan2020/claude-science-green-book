@@ -30,3 +30,9 @@
 | d10-02 | articles/assets/day10/fig02-writing-order.png | 10 | figure | 写作顺序：从结果与讨论起笔，摘要留到最后 | 第三节 | ready |
 | d10-03 | articles/assets/day10/fig03-bytes-line.png | 10 | figure | 六个版本的三维评分：完成度一格格爬，可复现跳着涨 | 第四节末 | ready |
 | d10-04 | articles/assets/day10/fig04-one-look.png | 10 | figure | 一张图看完：实验报告和论文差在哪、按什么顺序写、到什么程度算写完 | 结尾一图流 | ready |
+| d11-00 | articles/assets/day11/cs11-cover.png | 11 | cover | Claude Science 绿皮书 11 · 30 分钟速通比赛 | 封面 | ready |
+| d11-01 | articles/assets/day11/fig01-four-steps.png | 11 | figure | 必做任务四步闭环：每一步都要留下能回溯的痕迹 | 第一节 | ready |
+| d11-02 | articles/assets/day11/fig02-template-skeleton.png | 11 | figure | 官方模板的五章十三节：标题全是给定的，格子里的内容一个字都得自己填 | 第三节 | ready |
+| d11-03 | articles/assets/day11/fig03-six-rounds.png | 11 | figure | 六轮提问的三段：前两轮不动笔 | 第五节 | ready |
+| d11-04 | articles/assets/day11/fig04-timeline.png | 11 | figure | 30 分钟动线：四步的时间、产出和过关标准 | 第六节 | ready |
+| d11-05 | articles/assets/day11/fig05-one-look.png | 11 | figure | 一张图看完：比赛要什么、包里有什么、30 分钟怎么走 | 结尾一图流 | ready |
