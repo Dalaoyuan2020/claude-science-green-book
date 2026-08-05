@@ -1,65 +1,38 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><style>
-html,body{margin:0;width:1600px;background:#FFFFFF;font-family:"PingFang SC",sans-serif}
-.card{width:1600px;box-sizing:border-box;padding:56px 40px 40px;background:#FFFFFF;text-align:center}
-h1{font-family:"Yuanti SC","PingFang SC",sans-serif;font-size:44px;font-weight:700;color:#2E6B4B;margin:0 0 6px}
-.sub{font-size:26px;color:#6B7C72;margin:0 0 10px}
-svg{display:block;margin:0 auto}
-.nt{font-size:30px;font-weight:700;font-family:"Yuanti SC","PingFang SC",sans-serif}
-.nd{font-size:19px;font-family:"PingFang SC",sans-serif}
-.ctr{font-size:26px;font-weight:700;fill:#2E6B4B;font-family:"PingFang SC",sans-serif}
-.note{font-size:19px;fill:#B37400;font-weight:700;font-family:"PingFang SC",sans-serif}
+html,body{margin:0;width:1600px;background:#F2F7F3;font-family:"PingFang SC",sans-serif}
+.card{width:1600px;box-sizing:border-box;padding:60px 64px 48px;background:#F2F7F3}
+h1{font-family:"Songti SC",serif;font-size:44px;font-weight:700;color:#215E41;margin:0 0 8px;text-align:center}
+.sub{font-size:26px;color:#6B7C72;margin:0 0 44px;text-align:center}
+.stage{display:flex;flex-direction:column;align-items:center}
+.node{width:880px;box-sizing:border-box;border-radius:16px;padding:26px 34px;background:#fff;border:2px solid #D9E7DD;display:flex;align-items:center;gap:24px}
+.node.hot{background:#215E41;border-color:#215E41}
+.node .no{flex:none;width:64px;height:64px;border-radius:50%;background:#215E41;color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;font-family:"Songti SC",serif}
+.node.hot .no{background:#fff;color:#215E41}
+.node .tx{flex:1;text-align:left}
+.node .t{font-size:32px;font-weight:700;color:#215E41;font-family:"Songti SC",serif;margin-bottom:4px}
+.node.hot .t{color:#fff}
+.node .d{font-size:21px;color:#4b5a50;line-height:1.45}
+.node.hot .d{color:#DFF0E5}
+.arrow{width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-top:22px solid #215E41;margin:16px 0}
+/* 第4步回指第1步的粗回流线 */
+.loop{position:relative;width:880px;height:34px;margin:6px 0 0}
+.loop .bar{position:absolute;left:0;top:0;height:8px;width:100%;background:#E9C63F;border-radius:4px}
+.loop .lbl{position:absolute;left:50%;top:12px;transform:translateX(-50%);font-size:21px;font-weight:800;color:#8a6d00;white-space:nowrap}
+.note{margin-top:34px;text-align:center;font-size:24px;font-weight:700;color:#215E41}
 </style></head><body>
 <div class="card">
   <h1>必做任务：四步闭环</h1>
   <p class="sub">文献调研智能体 · 每一步都要留下能回溯的痕迹</p>
-  <svg width="1040" height="900" viewBox="0 0 1040 900">
-    <defs>
-      <marker id="ah" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
-        <path d="M0,0 L10,5 L0,10 z" fill="#2E6B4B"/>
-      </marker>
-    </defs>
-
-    <!-- 环形连接（顺时针 1→2→3→4→1） -->
-    <circle cx="520" cy="440" r="300" fill="none" stroke="#C9DCD1" stroke-width="3"/>
-    <!-- 顺时针四段弧箭头 -->
-    <path d="M 760 260 A 300 300 0 0 1 800 430" fill="none" stroke="#2E6B4B" stroke-width="3.5" marker-end="url(#ah)"/>
-    <path d="M 780 620 A 300 300 0 0 1 620 740" fill="none" stroke="#2E6B4B" stroke-width="3.5" marker-end="url(#ah)"/>
-    <path d="M 420 740 A 300 300 0 0 1 260 620" fill="none" stroke="#2E6B4B" stroke-width="3.5" marker-end="url(#ah)"/>
-    <path d="M 240 430 A 300 300 0 0 1 280 260" fill="none" stroke="#2E6B4B" stroke-width="3.5" marker-end="url(#ah)"/>
-
-    <!-- 圆心 -->
-    <text class="ctr" x="520" y="430" text-anchor="middle">第四步倒着管前面三步</text>
-    <text class="ctr" x="520" y="466" text-anchor="middle">前三步不能只留结果</text>
-
-    <!-- 第4节点回指圆心 -->
-    <path d="M 250 430 L 380 432" fill="none" stroke="#B37400" stroke-width="3" stroke-dasharray="6,5" marker-end="url(#ah)"/>
-    <text class="note" x="300" y="405" text-anchor="middle">回指圆心</text>
-
-    <!-- 四节点（圆周上右下左/上） -->
-    <!-- 1 顶 -->
-    <g>
-      <rect x="360" y="60" width="320" height="120" rx="16" fill="#E8F2EC" stroke="#C9DCD1" stroke-width="2"/>
-      <text class="nt" x="520" y="112" text-anchor="middle" fill="#2E6B4B">1 · 检索筛选</text>
-      <text class="nd" x="520" y="148" text-anchor="middle" fill="#2B2B2B">搜了几轮、什么词、为何滑掉某篇</text>
-    </g>
-    <!-- 2 右 -->
-    <g>
-      <rect x="720" y="380" width="300" height="120" rx="16" fill="#E8F2EC" stroke="#C9DCD1" stroke-width="2"/>
-      <text class="nt" x="870" y="432" text-anchor="middle" fill="#2E6B4B">2 · 知识抽取</text>
-      <text class="nd" x="870" y="468" text-anchor="middle" fill="#2B2B2B">字段出自哪篇、哪一段</text>
-    </g>
-    <!-- 3 底 -->
-    <g>
-      <rect x="360" y="700" width="320" height="120" rx="16" fill="#E8F2EC" stroke="#C9DCD1" stroke-width="2"/>
-      <text class="nt" x="520" y="752" text-anchor="middle" fill="#2E6B4B">3 · 缺口识别</text>
-      <text class="nd" x="520" y="788" text-anchor="middle" fill="#2B2B2B">判断依据是哪几条证据</text>
-    </g>
-    <!-- 4 左（实心重点） -->
-    <g>
-      <rect x="20" y="380" width="300" height="120" rx="16" fill="#2E6B4B"/>
-      <text class="nt" x="170" y="432" text-anchor="middle" fill="#FFFFFF">4 · 证据链报告</text>
-      <text class="nd" x="170" y="468" text-anchor="middle" fill="#E8F2EC">每句结论能指回来源</text>
-    </g>
-  </svg>
+  <div class="stage">
+    <div class="node"><span class="no">1</span><div class="tx"><div class="t">检索筛选</div><div class="d">留下：搜了几轮、用了什么词、为什么滑掉某篇</div></div></div>
+    <div class="arrow"></div>
+    <div class="node"><span class="no">2</span><div class="tx"><div class="t">知识抽取</div><div class="d">留下：每个字段出自哪篇、哪一段</div></div></div>
+    <div class="arrow"></div>
+    <div class="node"><span class="no">3</span><div class="tx"><div class="t">缺口识别</div><div class="d">留下：判断依据是哪几条证据</div></div></div>
+    <div class="arrow"></div>
+    <div class="node hot"><span class="no">4</span><div class="tx"><div class="t">证据链报告</div><div class="d">每句结论能指回来源</div></div></div>
+    <div class="loop"><span class="bar"></span><span class="lbl">↺ 第 4 步倒着管前面三步：要可溯源，前三步就得存过程</span></div>
+  </div>
+  <div class="note">第四步倒着管前面三步 · 前三步不能只留结果</div>
 </div>
 </body></html>
